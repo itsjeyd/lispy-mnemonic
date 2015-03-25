@@ -1,0 +1,138 @@
+;;; lispy-mnemonic.el --- Mnemonic key bindings for Lispy.
+
+;; Copyright (C) 2015 Tim Krones
+
+;; Author: Tim Krones <t.krones@gmx.net>
+;; Version: 0.1
+;; Package-Requires: ((lispy "0.23.0") (hydra "0.12.0"))
+;; URL: https://github.com/itsjeyd/lispy-mnemonic
+;; Keywords: lisp
+
+;;; This file is not part of GNU Emacs
+
+;;; License
+
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; ...
+
+;;; Code:
+
+(require 'lispy)
+(require 'hydra)
+
+;;;;;;;;;;;;;
+;;; Hydra ;;;
+;;;;;;;;;;;;;
+
+(defhydra hydra-lispy-ace (:color blue)
+  "Lispy ace"
+  ("c" lispy-ace-char "char")
+  ("p" lispy-ace-paren "paren")
+  ("r" lispy-ace-symbol-replace "replace")
+  ("s" lispy-ace-symbol "symbol")
+  ("w" lispy-ace-subword "word")
+  ("d" lispy-goto-def-ace "definition")
+  ("t" lispy-teleport "teleport"))
+
+(defhydra hydra-lispy-eval (:color blue)
+  "Lispy eval"
+  ("e" lispy-eval "here")
+  ("h" lispy-eval "here")
+  ("o" lispy-eval-other-window "other window")
+  ("i" lispy-eval-and-insert "insert")
+  ("c" lispy-eval-and-comment "comment"))
+
+(defhydra hydra-lispy-goto (:color blue)
+  "Lispy goto"
+  ("f" lispy-follow "follow")
+  ("a" lispy-goto-def-ace "definition (ace)")
+  ("d" lispy-goto-def-down "definition (down)")
+  ("g" lispy-goto "default")
+  ("l" lispy-goto-local "local")
+  ("p" lispy-goto-projectile "projectile")
+  ("r" lispy-goto-recursive "recursive")
+  ("s" lispy-goto-symbol "definition")
+  ("." lispy-goto-symbol "definition")
+  ("," pop-tag-mark "pop tag mark"))
+
+(defhydra hydra-lispy-mark ()
+  "Lispy mark"
+  ("e" lispy-mark "expand")
+  ("m" lispy-mark "expand")
+  ("l" lispy-mark-list "list")
+  ("s" lispy-mark-symbol "symbol"))
+
+(defhydra hydra-lispy-move ()
+  "Lispy move"
+  ("d" lispy-move-down "down")
+  ("l" lispy-move-left "left")
+  ("r" lispy-move-right "right")
+  ("u" lispy-move-up "up"))
+
+(defhydra hydra-lispy-raise ()
+  "Lispy raise"
+  ("r" lispy-raise "this")
+  ("t" lispy-raise "this")
+  ("s" lispy-raise-some "some"))
+
+(defhydra hydra-lispy-slurp ()
+  "Lispy slurp"
+  (">" lispy-slurp "default")
+  ("t" lispy-down-slurp "down")
+  ("s" lispy-up-slurp "up"))
+
+;;;;;;;;;;;;;;;;;;;;
+;;; Key Bindings ;;;
+;;;;;;;;;;;;;;;;;;;;
+
+;; Global bindings (work in any context)
+
+(define-key lispy-mode-map (kbd "<C-return>") 'hydra-lispy-mark/body)
+(define-key lispy-mode-map (kbd "[") 'lispy-brackets)
+(define-key lispy-mode-map (kbd "C-1") 'lispy-string-oneline)
+(define-key lispy-mode-map (kbd "C-.") 'lispy-kill-at-point)
+(define-key lispy-mode-map (kbd "C-;") 'lispy-describe-inline)
+(define-key lispy-mode-map (kbd "C-(") 'lispy-arglist-inline)
+(define-key lispy-mode-map (kbd "C-)") 'lispy-arglist-inline)
+(define-key lispy-mode-map (kbd "C-*") lispy-mode-x-map)
+(define-key lispy-mode-map (kbd "M-n") 'lispy-forward)
+(define-key lispy-mode-map (kbd "M-p") 'lispy-backward)
+(define-key lispy-mode-map (kbd "M-o") 'lispy-parens-down)
+(define-key lispy-mode-map (kbd "s-l") 'lispy-left)
+(define-key lispy-mode-map (kbd "s-r") 'lispy-right)
+(define-key lispy-mode-map (kbd "s-o") 'lispy-out-forward-newline)
+
+;; Local (work in "special" only)
+
+(lispy-define-key lispy-mode-map (kbd "a") 'hydra-lispy-ace/body)
+(lispy-define-key lispy-mode-map (kbd "e") 'hydra-lispy-eval/body)
+(lispy-define-key lispy-mode-map (kbd "g") 'hydra-lispy-goto/body)
+(lispy-define-key lispy-mode-map (kbd "m") 'hydra-lispy-move/body)
+(lispy-define-key lispy-mode-map (kbd ">") 'hydra-lispy-slurp/body)
+(lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
+(lispy-define-key lispy-mode-map (kbd "d") 'lispy-down)
+(lispy-define-key lispy-mode-map (kbd "n") 'lispy-down)
+(lispy-define-key lispy-mode-map (kbd "l") 'lispy-left)
+(lispy-define-key lispy-mode-map (kbd "o") 'lispy-occur)
+(lispy-define-key lispy-mode-map (kbd "r") 'lispy-right)
+(lispy-define-key lispy-mode-map (kbd "p") 'lispy-up)
+(lispy-define-key lispy-mode-map (kbd "u") 'lispy-up)
+(lispy-define-key lispy-mode-map (kbd "s") 'lispy-different)
+(lispy-define-key lispy-mode-map (kbd "w") 'lispy-new-copy)
+(lispy-define-key lispy-mode-map (kbd "/") 'lispy-undo)
+
+(provide 'lispy-mnemonic)
