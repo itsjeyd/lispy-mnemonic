@@ -1,4 +1,4 @@
-## lispy-mnemonic.el
+## lispy-mnemonic.el [![License: GPL](https://img.shields.io/badge/license-GPL-blue.svg)](http://opensource.org/licenses/GPL-3.0)
 
 [Mnemonic](https://en.wikipedia.org/wiki/Mnemonic) key bindings for
 [`lispy`](https://github.com/abo-abo/lispy)!
