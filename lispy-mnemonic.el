@@ -155,7 +155,6 @@
 (define-key lispy-mode-map (kbd "C-;") 'lispy-describe-inline)
 (define-key lispy-mode-map (kbd "C-(") 'lispy-arglist-inline)
 (define-key lispy-mode-map (kbd "C-)") 'lispy-arglist-inline)
-(define-key lispy-mode-map (kbd "C-*") lispy-mode-x-map)
 (define-key lispy-mode-map (kbd "M-n") 'lispy-forward)
 (define-key lispy-mode-map (kbd "M-p") 'lispy-backward)
 (define-key lispy-mode-map (kbd "M-o") 'lispy-parens-down)
