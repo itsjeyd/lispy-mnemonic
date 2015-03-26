@@ -28,6 +28,8 @@
 ;;; Commentary:
 ;;
 ;; This package sets up mnemonic key bindings for Lispy.
+;;
+;; See [5] for a full list of bindings.
 
 ;; Installation
 ;;
@@ -53,6 +55,7 @@
 ;; [2] https://github.com/abo-abo/lispy
 ;; [3] http://melpa.org/
 ;; [4] https://github.com/abo-abo/hydra
+;; [5] https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org
 
 ;;; Code:
 

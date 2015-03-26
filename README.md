@@ -20,3 +20,7 @@ it, follow these steps:
 
         (add-to-list 'load-path "~/path/to/lispy-mnemonic/")
         (require 'lispy-mnemonic)
+
+### Usage
+
+See [here](https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org) for a full list of bindings.
