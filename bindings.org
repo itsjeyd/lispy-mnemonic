@@ -31,10 +31,6 @@
 * Local bindings (a-z)
   | Binding     | Command name                  | Orig | Rationale                              |
   |-------------+-------------------------------+------+----------------------------------------|
-  | *           | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]                  |      | Default binding: M-*                   |
-  | /           | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]                    |      | "C-/" runs undo                        |
-  | <           | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]                    | yes  |                                        |
-  | >           | [[#lispy-slurp][Hydra: Lispy Slurp]]            |      |                                        |
   | a           | [[#lispy-ace][Hydra: Lispy Ace]]              |      |                                        |
   | b           | [[http://oremacs.com/lispy/#lispy-store-region-and-buffer][lispy-store-region-and-buffer]] | yes  |                                        |
   | c           | [[http://oremacs.com/lispy/#lispy-clone][lispy-clone]]                   | yes  |                                        |
@@ -52,6 +48,10 @@
   | v           | [[http://oremacs.com/lispy/#lispy-view][lispy-view]]                    | yes  |                                        |
   | w           | [[http://oremacs.com/lispy/#lispy-new-copy][lispy-new-copy]]                |      | "M-w" copies region                    |
   | x           | [[#lispy-x][Hydra: Lispy X]]                |      |                                        |
+  | *           | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]                  |      | Default binding: M-*                   |
+  | /           | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]                    |      | "C-/" runs undo                        |
+  | <           | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]                    | yes  |                                        |
+  | >           | [[#lispy-slurp][Hydra: Lispy Slurp]]            |      |                                        |
   |-------------+-------------------------------+------+----------------------------------------|
 
 * Local bindings (A-Z)
@@ -71,10 +71,10 @@
   | P           | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                  |
   | R           | [[#lispy-raise][Hydra: Lispy Raise]]       |      |                  |
   | S           | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                  |
-  | SPC         | [[http://oremacs.com/lispy/#lispy-space][lispy-space]]              | yes  |                  |
   | T           | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*      |
   | V           | [[http://oremacs.com/lispy/#lispy-visit][lispy-visit]]              | yes  |                  |
   | W           | [[http://oremacs.com/lispy/#lispy-widen][lispy-widen]]              | yes  |                  |
+  | SPC         | [[http://oremacs.com/lispy/#lispy-space][lispy-space]]              | yes  |                  |
   |-------------+--------------------------+------+------------------|
 
 * Hydras
