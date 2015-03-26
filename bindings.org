@@ -197,7 +197,7 @@
 
    | Binding | Command name           |
    |---------+------------------------|
-   | f       | [[http://oremacs.com/lispy/#lispy][lispy]]                  |
+   | f       | [[http://oremacs.com/lispy/#lispy-flatten][lispy-flatten]]          |
    | c       | [[http://oremacs.com/lispy/#lispy-to-cond][lispy-to-cond]]          |
    | d       | [[http://oremacs.com/lispy/#lispy-to-defun][lispy-to-defun]]         |
    | i       | [[http://oremacs.com/lispy/#lispy-to-ifs][lispy-to-ifs]]           |
