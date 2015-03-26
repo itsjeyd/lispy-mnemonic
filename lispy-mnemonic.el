@@ -26,8 +26,33 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
+;;
+;; This package sets up mnemonic key bindings for Lispy.
 
-;; ...
+;; Installation
+;;
+;; `lispy-mnemonic` is not on MELPA (yet). To start using it, follow
+;; these steps:
+;;
+;; 1. If you haven't already, install Lispy:
+;;
+;;    M-x package-install RET lispy RET
+;;
+;; 2. Clone this repo:
+;;
+;;    $ git clone https://github.com/itsjeyd/lispy-mnemonic.git
+;;
+;; 3. Add the following code to your init-file:
+;;
+;;    (add-to-list 'load-path "~/path/to/lispy-mnemonic/")
+;;    (require 'lispy-mnemonic)
+
+;;; Links
+
+;; [1] https://en.wikipedia.org/wiki/Mnemonic
+;; [2] https://github.com/abo-abo/lispy
+;; [3] http://melpa.org/
+;; [4] https://github.com/abo-abo/hydra
 
 ;;; Code:
 
