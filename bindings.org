@@ -186,8 +186,8 @@
    | Binding | Command name     |
    |---------+------------------|
    | >       | [[http://oremacs.com/lispy/#lispy-slurp][lispy-slurp]]      |
-   | t       | [[http://oremacs.com/lispy/#lispy-down-slurp][lispy-down-slurp]] |
-   | s       | [[http://oremacs.com/lispy/#lispy-up-slurp][lispy-up-slurp]]   |
+   | d       | [[http://oremacs.com/lispy/#lispy-down-slurp][lispy-down-slurp]] |
+   | u       | [[http://oremacs.com/lispy/#lispy-up-slurp][lispy-up-slurp]]   |
    |---------+------------------|
 
 ** Lispy X: =C-*=, =x=

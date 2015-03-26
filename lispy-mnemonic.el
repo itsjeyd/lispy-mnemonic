@@ -127,8 +127,8 @@
 (defhydra hydra-lispy-slurp ()
   "Lispy slurp"
   (">" lispy-slurp "default")
-  ("t" lispy-down-slurp "down")
-  ("s" lispy-up-slurp "up"))
+  ("d" lispy-down-slurp "down")
+  ("u" lispy-up-slurp "up"))
 
 (defhydra hydra-lispy-x ()
   "Lispy x"
