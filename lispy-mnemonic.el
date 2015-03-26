@@ -99,7 +99,7 @@
   ("r" lispy-goto-recursive "recursive")
   ("s" lispy-goto-symbol "definition")
   ("." lispy-goto-symbol "definition")
-  ("," pop-tag-mark "pop tag mark"))
+  ("*" pop-tag-mark "pop tag mark"))
 
 (defhydra hydra-lispy-mark ()
   "Lispy mark"
