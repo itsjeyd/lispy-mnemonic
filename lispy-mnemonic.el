@@ -181,5 +181,6 @@
 (lispy-define-key lispy-mode-map (kbd "w") 'lispy-new-copy)
 (lispy-define-key lispy-mode-map (kbd "/") 'lispy-undo)
 (lispy-define-key lispy-mode-map (kbd "*") 'pop-tag-mark)
+(lispy-define-key lispy-mode-map (kbd "E") 'lispy-ediff-regions)
 
 (provide 'lispy-mnemonic)
