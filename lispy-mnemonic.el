@@ -96,7 +96,7 @@
   ("f" lispy-follow "follow")
   ("a" lispy-goto-def-ace "definition (ace)")
   ("d" lispy-goto-def-down "definition (down)")
-  ("g" lispy-goto "default")
+  ("g" lispy-goto "goto")
   ("l" lispy-goto-local "local")
   ("p" lispy-goto-projectile "projectile")
   ("r" lispy-goto-recursive "recursive")
@@ -126,7 +126,7 @@
 
 (defhydra hydra-lispy-slurp ()
   "Lispy slurp"
-  (">" lispy-slurp "default")
+  (">" lispy-slurp "slurp")
   ("d" lispy-down-slurp "down")
   ("u" lispy-up-slurp "up"))
 
