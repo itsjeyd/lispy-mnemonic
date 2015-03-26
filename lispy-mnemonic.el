@@ -73,6 +73,13 @@
   ("d" lispy-goto-def-ace "definition")
   ("t" lispy-teleport "teleport"))
 
+(defhydra hydra-lispy-debug ()
+  "Lispy debug"
+  ("e" lispy-edebug "edebug")
+  ("s" lispy-debug-step-in "step in")
+  ("S" lispy-edebug-stop "stop")
+  ("d" lispy-describe "describe"))
+
 (defhydra hydra-lispy-eval (:color blue)
   "Lispy eval"
   ("e" lispy-eval "here")
@@ -120,6 +127,16 @@
   ("t" lispy-down-slurp "down")
   ("s" lispy-up-slurp "up"))
 
+(defhydra hydra-lispy-x ()
+  "Lispy x"
+  ("f" lispy-flatten "flatten")
+  ("c" lispy-to-cond "to cond")
+  ("d" lispy-to-defun "to defun")
+  ("i" lispy-to-ifs "to ifs")
+  ("l" lispy-to-lambda "to lambda")
+  ("r" lispy-eval-and-replace "replace")
+  ("u" lispy-unbind-variable "unbind variable"))
+
 ;;;;;;;;;;;;;;;;;;;;
 ;;; Key Bindings ;;;
 ;;;;;;;;;;;;;;;;;;;;
@@ -127,6 +144,8 @@
 ;; Global bindings (work in any context)
 
 (define-key lispy-mode-map (kbd "<C-return>") 'hydra-lispy-mark/body)
+(define-key lispy-mode-map (kbd "C-*") 'hydra-lispy-x/body)
+(define-key lispy-mode-map (kbd "s-d") 'hydra-lispy-debug/body)
 (define-key lispy-mode-map (kbd "[") 'lispy-brackets)
 (define-key lispy-mode-map (kbd "C-1") 'lispy-string-oneline)
 (define-key lispy-mode-map (kbd "C-.") 'lispy-kill-at-point)
@@ -147,7 +166,9 @@
 (lispy-define-key lispy-mode-map (kbd "e") 'hydra-lispy-eval/body)
 (lispy-define-key lispy-mode-map (kbd "g") 'hydra-lispy-goto/body)
 (lispy-define-key lispy-mode-map (kbd "m") 'hydra-lispy-move/body)
+(lispy-define-key lispy-mode-map (kbd "x") 'hydra-lispy-x/body)
 (lispy-define-key lispy-mode-map (kbd ">") 'hydra-lispy-slurp/body)
+(lispy-define-key lispy-mode-map (kbd "D") 'hydra-lispy-debug/body)
 (lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
 (lispy-define-key lispy-mode-map (kbd "d") 'lispy-down)
 (lispy-define-key lispy-mode-map (kbd "n") 'lispy-down)
