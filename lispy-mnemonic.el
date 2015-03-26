@@ -127,6 +127,7 @@
 (defhydra hydra-lispy-slurp ()
   "Lispy slurp"
   (">" lispy-slurp "slurp")
+  ("s" lispy-slurp "slurp")
   ("d" lispy-down-slurp "down")
   ("u" lispy-up-slurp "up"))
 
