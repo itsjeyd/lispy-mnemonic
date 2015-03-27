@@ -1,4 +1,37 @@
 #+TITLE: Bindings
+Below you will find a list of key sequences and associated commands.
+There are three special cases:
+
+1. If a key sequence is *unbound*, this means that neither =lispy= nor
+   =lispy-mnemonic= binds it.
+
+   In other words: You can bind the sequence to any command you like
+   without affecting default bindings provided by =lispy= or
+   =lispy-mnemonic=.
+
+2. If a key sequence is *available*, this means:
+
+   - =lispy-mnemonic= does /not/ bind it.
+   - =lispy= binds it, but the command that it is bound to has been
+     given an alternative binding in =lispy-mnemonic=.
+
+   In other words: If you bind the sequence to a command of your
+   choice, you will override a default binding provided by =lispy=,
+   but you won't affect any default bindings provided by
+   =lispy-mnemonic=. The command that =lispy= binds this sequence to
+   will /not/ become unbound.
+
+3. If a key sequence is *endangered*, this means:
+
+   - =lispy-mnemonic= does /not/ bind it.
+   - =lispy= binds it, and the command that it is bound to has /not/
+     been given an alternative binding in =lispy-mnemonic= (yet).
+
+   In other words: If you bind the sequence to a command of your
+   choice, you will override a default binding provided by =lispy=,
+   and the command that =lispy= binds this sequence to will become
+   unbound.
+
 * Global bindings
   | Binding  | Command name              | Orig | Rationale                                        |
   |----------+---------------------------+------+--------------------------------------------------|
@@ -38,16 +71,23 @@
   | e       | [[#lispy-eval][Hydra: Lispy Eval]]             |      |                                        |
   | f       | [[http://oremacs.com/lispy/#lispy-flow][lispy-flow]]                    | yes  |                                        |
   | g       | [[#lispy-goto][Hydra: Lispy Goto]]             |      |                                        |
+  | h       | *available*                   |      |                                        |
   | i       | [[http://oremacs.com/lispy/#lispy-tab][lispy-tab]]                     | yes  | =C-i= is =TAB=                         |
+  | j       | *available*                   |      |                                        |
+  | k       | *available*                   |      |                                        |
   | l       | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                    |      |                                        |
   | m       | [[#lispy-move][Hydra: Lispy Move]]             |      |                                        |
   | o       | [[http://oremacs.com/lispy/#lispy-occur][lispy-occur]]                   |      |                                        |
+  | q       | *available*                   |      |                                        |
   | r       | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]                   |      |                                        |
   | s       | [[http://oremacs.com/lispy/#lispy-different][lispy-different]]               |      | *Switch* to other side of current sexp |
+  | t       | *available*                   |      |                                        |
   | u, p    | [[http://oremacs.com/lispy/#lispy-up][lispy-up]]                      |      |                                        |
   | v       | [[http://oremacs.com/lispy/#lispy-view][lispy-view]]                    | yes  |                                        |
   | w       | [[http://oremacs.com/lispy/#lispy-new-copy][lispy-new-copy]]                |      | =M-w= copies region                    |
   | x       | [[#lispy-x][Hydra: Lispy X]]                |      |                                        |
+  | y       | *available*                   |      |                                        |
+  | z       | *endangered*                  |      |                                        |
   | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]                  |      | Default binding: =M-*=                 |
   | /       | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]                    |      | =C-/= runs =undo=                      |
   | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]                    | yes  |                                        |
@@ -58,22 +98,31 @@
   | Binding | Command name             | Orig | Rationale          |
   |---------+--------------------------+------+--------------------|
   | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  |                    |
+  | B       | *available*              |      |                    |
   | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
   | D       | [[#lispy-debug][Hydra: Lispy Debug]]       |      |                    |
   | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
   | F       | [[http://oremacs.com/lispy/#lispy-follow][lispy-follow]]             | yes  |                    |
+  | G       | *available*              |      |                    |
+  | H       | *available*              |      |                    |
   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
   | J       | [[http://oremacs.com/lispy/#lispy-outline-next][lispy-outline-next]]       | yes  |                    |
   | K       | [[http://oremacs.com/lispy/#lispy-outline-prev][lispy-outline-prev]]       | yes  |                    |
+  | L       | *endangered*             |      |                    |
   | M       | [[http://oremacs.com/lispy/#lispy-multiline][lispy-multiline]]          | yes  |                    |
   | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
   | O       | [[http://oremacs.com/lispy/#lispy-oneline][lispy-oneline]]            | yes  |                    |
   | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
+  | Q       | *available*              |      |                    |
   | R       | [[#lispy-raise][Hydra: Lispy Raise]]       |      |                    |
   | S       | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                    |
   | T       | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*        |
+  | U       | *unbound*                |      |                    |
   | V       | [[http://oremacs.com/lispy/#lispy-visit][lispy-visit]]              | yes  |                    |
   | W       | [[http://oremacs.com/lispy/#lispy-widen][lispy-widen]]              | yes  |                    |
+  | X       | *unbound*                |      |                    |
+  | Y       | *unbound*                |      |                    |
+  | Z       | *available*              |      |                    |
   | SPC     | [[http://oremacs.com/lispy/#lispy-space][lispy-space]]              | yes  |                    |
   |---------+--------------------------+------+--------------------|
 
