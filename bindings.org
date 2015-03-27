@@ -189,6 +189,8 @@
    | s       | [[http://oremacs.com/lispy/#lispy-slurp][lispy-slurp]]      |
    | d       | [[http://oremacs.com/lispy/#lispy-down-slurp][lispy-down-slurp]] |
    | u       | [[http://oremacs.com/lispy/#lispy-up-slurp][lispy-up-slurp]]   |
+   | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]       |
+   | b       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]       |
    |---------+------------------|
 
 ** Lispy X: =C-*=, =x=
