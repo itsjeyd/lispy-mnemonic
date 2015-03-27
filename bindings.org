@@ -41,7 +41,7 @@ There are three special cases:
   | [        | [[http://oremacs.com/lispy/#lispy-brackets][lispy-brackets]]            |      |                                                  |
   | {        | [[http://oremacs.com/lispy/#lispy-braces][lispy-braces]]              | yes  |                                                  |
   | ;        | [[http://oremacs.com/lispy/#lispy-comment][lispy-comment]]             | yes  |                                                  |
-  | s-d      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]         |      |                                                  |
+  | s-d      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]        |      |                                                  |
   | s-l      | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                |      |                                                  |
   | s-r      | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]               |      |                                                  |
   | s-o      | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]] |      | Enhanced version of =open-line=                  |
