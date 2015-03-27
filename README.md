@@ -33,6 +33,25 @@ choices are based on the following principles:
    functionality they provide is completely unrelated to the command
    you are trying to bind).
 
+### Target Audience
+
+If you:
+
+- would like to start learning Lispy
+- have played around with Lispy but not mastered it
+- haven't burned Vim-style key bindings into your muscle memory
+- find that mnemonics make it easier to learn and remember new
+  commands and key bindings
+
+... there is a good chance you'll benefit from using `lispy-mnemonic`.
+
+If you have already memorized most or all of Lispy's commands and key
+bindings (kudos!), you probably don't need this package. But before
+you leave, *do* have a look at the
+[hydras](https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#hydras)
+that `lispy-mnemonic` ships with. Who knows, maybe you'll find a
+couple that you like :)
+
 ### Installation
 
 `lispy-mnemonic` is not on [MELPA](http://melpa.org/) (yet). To start using
