@@ -1,17 +1,20 @@
 ## lispy-mnemonic.el [![License: GPL](https://img.shields.io/badge/license-GPL-blue.svg)](http://opensource.org/licenses/GPL-3.0)
 
-[Mnemonic](https://en.wikipedia.org/wiki/Mnemonic) key bindings for
-[`lispy`](https://github.com/abo-abo/lispy)!
+This package provides a set of
+[mnemonic](https://en.wikipedia.org/wiki/Mnemonic) key bindings for
+[Lispy](https://github.com/abo-abo/lispy). It also makes extensive use
+of [hydras](https://github.com/abo-abo/hydra) for grouping related
+commands and improving discoverability.
 
 ### Background
 
-This package started out as an attempt to make it easier for myself to
-learn Lispy. I'm familiar with the concept of modal editing, but I'm
-not a Vim user (which means that it doesn't come naturally to me to
-use, e.g., <kbd>hjkl</kbd> for movement). Also, I find it harder to
-commit a key sequence to memory if it is completely unrelated to the
-command it is bound to (as evidenced by the fact that I rely heavily
-on mnemonics in my
+`lispy-mnemonic` started out as an attempt to make it easier for
+myself to learn Lispy. I'm familiar with the concept of modal editing,
+but I'm not a Vim user (which means that it doesn't come naturally to
+me to use, e.g., <kbd>hjkl</kbd> for movement). Also, I find it harder
+to commit a key sequence to memory if it is completely unrelated to
+the command it is bound to (as evidenced by the fact that I rely
+heavily on mnemonics in my
 [personal Emacs configuration](https://github.com/itsjeyd/.emacs.d)).
 
 ### Philosophy
