@@ -76,72 +76,73 @@ There are three special cases:
   | <M-return> | lispy-meta-return              | yes  |                                                  |
   |------------+--------------------------------+------+--------------------------------------------------|
 
-* Local bindings (a-z)
-  | Binding | Command name       | Orig | Mnemonic                                |
-  |---------+--------------------+------+-----------------------------------------|
-  | a       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-ace-a][Hydra: Lispy Ace]]   |      |                                         |
-  | b       | lispy-back         | yes  |                                         |
-  | c       | [[http://oremacs.com/lispy/#lispy-clone][lispy-clone]]        | yes  |                                         |
-  | d       | [[http://oremacs.com/lispy/#lispy-down][lispy-down]]         |      |                                         |
-  | e       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-eval-e][Hydra: Lispy Eval]]  |      |                                         |
-  | f       | [[http://oremacs.com/lispy/#lispy-flow][lispy-flow]]         | yes  |                                         |
-  | g       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-goto-g][Hydra: Lispy Goto]]  |      |                                         |
-  | h       | *available*        |      |                                         |
-  | i       | [[http://oremacs.com/lispy/#lispy-tab][lispy-tab]]          | yes  | =C-i= is =TAB=                          |
-  | j       | *available*        |      |                                         |
-  | k       | *available*        |      |                                         |
-  | l       | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]         |      |                                         |
-  | m       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]  |      |                                         |
-  | n       | [[http://oremacs.com/lispy/#lispy-forward][lispy-forward]]      |      | Equivalent to =forward-list= (=C-M-n=)  |
-  | o       | [[http://oremacs.com/lispy/#lispy-occur][lispy-occur]]        |      |                                         |
-  | p       | [[http://oremacs.com/lispy/#lispy-backward][lispy-backward]]     |      | Equivalent to =backward-list= (=C-M-p=) |
-  | q       | *available*        |      |                                         |
-  | r       | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]        |      |                                         |
-  | s       | [[http://oremacs.com/lispy/#lispy-different][lispy-different]]    |      | *Switch* to other side of current sexp  |
-  | t       | *available*        |      |                                         |
-  | u       | [[http://oremacs.com/lispy/#lispy-up][lispy-up]]           |      |                                         |
-  | v       | [[http://oremacs.com/lispy/#lispy-view][lispy-view]]         | yes  |                                         |
-  | w       | [[http://oremacs.com/lispy/#lispy-new-copy][lispy-new-copy]]     |      | =M-w= copies region                     |
-  | x       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]     |      |                                         |
-  | y       | *available*        |      |                                         |
-  | z       | lispy-repeat       |      | =C-x z= runs =repeat=                   |
-  | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]       |      | Default binding: =M-*=                  |
-  | /       | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]         |      | =C-/= runs =undo=                       |
-  | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]         | yes  |                                         |
-  | >       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-slurp-][Hydra: Lispy Slurp]] |      |                                         |
-  |---------+--------------------+------+-----------------------------------------|
+* Local bindings
+** a-z
+   | Binding | Command name       | Orig | Mnemonic                                |
+   |---------+--------------------+------+-----------------------------------------|
+   | a       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-ace-a][Hydra: Lispy Ace]]   |      |                                         |
+   | b       | lispy-back         | yes  |                                         |
+   | c       | [[http://oremacs.com/lispy/#lispy-clone][lispy-clone]]        | yes  |                                         |
+   | d       | [[http://oremacs.com/lispy/#lispy-down][lispy-down]]         |      |                                         |
+   | e       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-eval-e][Hydra: Lispy Eval]]  |      |                                         |
+   | f       | [[http://oremacs.com/lispy/#lispy-flow][lispy-flow]]         | yes  |                                         |
+   | g       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-goto-g][Hydra: Lispy Goto]]  |      |                                         |
+   | h       | *available*        |      |                                         |
+   | i       | [[http://oremacs.com/lispy/#lispy-tab][lispy-tab]]          | yes  | =C-i= is =TAB=                          |
+   | j       | *available*        |      |                                         |
+   | k       | *available*        |      |                                         |
+   | l       | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]         |      |                                         |
+   | m       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]  |      |                                         |
+   | n       | [[http://oremacs.com/lispy/#lispy-forward][lispy-forward]]      |      | Equivalent to =forward-list= (=C-M-n=)  |
+   | o       | [[http://oremacs.com/lispy/#lispy-occur][lispy-occur]]        |      |                                         |
+   | p       | [[http://oremacs.com/lispy/#lispy-backward][lispy-backward]]     |      | Equivalent to =backward-list= (=C-M-p=) |
+   | q       | *available*        |      |                                         |
+   | r       | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]        |      |                                         |
+   | s       | [[http://oremacs.com/lispy/#lispy-different][lispy-different]]    |      | *Switch* to other side of current sexp  |
+   | t       | *available*        |      |                                         |
+   | u       | [[http://oremacs.com/lispy/#lispy-up][lispy-up]]           |      |                                         |
+   | v       | [[http://oremacs.com/lispy/#lispy-view][lispy-view]]         | yes  |                                         |
+   | w       | [[http://oremacs.com/lispy/#lispy-new-copy][lispy-new-copy]]     |      | =M-w= copies region                     |
+   | x       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]     |      |                                         |
+   | y       | *available*        |      |                                         |
+   | z       | lispy-repeat       |      | =C-x z= runs =repeat=                   |
+   | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]       |      | Default binding: =M-*=                  |
+   | /       | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]         |      | =C-/= runs =undo=                       |
+   | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]         | yes  |                                         |
+   | >       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-slurp-][Hydra: Lispy Slurp]] |      |                                         |
+   |---------+--------------------+------+-----------------------------------------|
 
-* Local bindings (A-Z)
-  | Binding | Command name             | Orig | Mnemonic           |
-  |---------+--------------------------+------+--------------------|
-  | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  |                    |
-  | B       | *available*              |      |                    |
-  | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
-  | D       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]       |      |                    |
-  | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
-  | F       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-format-f][Hydra: Lispy Format]]      |      |                    |
-  | G       | *available*              |      |                    |
-  | H       | *available*              |      |                    |
-  | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
-  | J       | *available*              |      |                    |
-  | K       | *available*              |      |                    |
-  | L       | *available*              |      |                    |
-  | M       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-move-m][Hydra: Lispy Move]]        |      |                    |
-  | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
-  | O       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-outline-o][Hydra: Lispy Outline]]     |      |                    |
-  | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
-  | Q       | *available*              |      |                    |
-  | R       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
-  | S       | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                    |
-  | T       | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*        |
-  | U       | lispy-unstringify        |      |                    |
-  | V       | [[http://oremacs.com/lispy/#lispy-visit][lispy-visit]]              | yes  |                    |
-  | W       | [[http://oremacs.com/lispy/#lispy-widen][lispy-widen]]              | yes  |                    |
-  | X       | *unbound*                |      |                    |
-  | Y       | *unbound*                |      |                    |
-  | Z       | *available*              |      |                    |
-  | SPC     | [[http://oremacs.com/lispy/#lispy-space][lispy-space]]              | yes  |                    |
-  |---------+--------------------------+------+--------------------|
+** A-Z
+   | Binding | Command name             | Orig | Mnemonic           |
+   |---------+--------------------------+------+--------------------|
+   | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  |                    |
+   | B       | *available*              |      |                    |
+   | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
+   | D       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]       |      |                    |
+   | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
+   | F       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-format-f][Hydra: Lispy Format]]      |      |                    |
+   | G       | *available*              |      |                    |
+   | H       | *available*              |      |                    |
+   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
+   | J       | *available*              |      |                    |
+   | K       | *available*              |      |                    |
+   | L       | *available*              |      |                    |
+   | M       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-move-m][Hydra: Lispy Move]]        |      |                    |
+   | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
+   | O       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-outline-o][Hydra: Lispy Outline]]     |      |                    |
+   | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
+   | Q       | *available*              |      |                    |
+   | R       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
+   | S       | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                    |
+   | T       | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*        |
+   | U       | lispy-unstringify        |      |                    |
+   | V       | [[http://oremacs.com/lispy/#lispy-visit][lispy-visit]]              | yes  |                    |
+   | W       | [[http://oremacs.com/lispy/#lispy-widen][lispy-widen]]              | yes  |                    |
+   | X       | *unbound*                |      |                    |
+   | Y       | *unbound*                |      |                    |
+   | Z       | *available*              |      |                    |
+   | SPC     | [[http://oremacs.com/lispy/#lispy-space][lispy-space]]              | yes  |                    |
+   |---------+--------------------------+------+--------------------|
 
 * Hydras
 ** Lispy Ace: =a=
