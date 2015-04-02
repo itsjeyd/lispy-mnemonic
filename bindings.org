@@ -166,6 +166,7 @@ There are three special cases:
    | Binding | Command name            |
    |---------+-------------------------|
    | e       | [[http://oremacs.com/lispy/#lispy-eval][lispy-eval]]              |
+   | r       | [[http://oremacs.com/lispy/#lispy-eval-and-replace][lispy-eval-and-replace]]  |
    | o       | [[http://oremacs.com/lispy/#lispy-eval-other-window][lispy-eval-other-window]] |
    | i       | [[http://oremacs.com/lispy/#lispy-eval-and-insert][lispy-eval-and-insert]]   |
    | c       | [[http://oremacs.com/lispy/#lispy-eval-and-comment][lispy-eval-and-comment]]  |
