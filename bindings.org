@@ -33,7 +33,7 @@ There are three special cases:
    unbound.
 
 * Global bindings
-  | Binding  | Command name              | Orig | Rationale                                        |
+  | Binding  | Command name              | Orig | Mnemonic                                         |
   |----------+---------------------------+------+--------------------------------------------------|
   | "        | [[http://oremacs.com/lispy/#lispy-quotes][lispy-quotes]]              | yes  |                                                  |
   | (        | [[http://oremacs.com/lispy/#lispy-parens][lispy-parens]]              | yes  |                                                  |
@@ -62,7 +62,7 @@ There are three special cases:
   |----------+---------------------------+------+--------------------------------------------------|
 
 * Local bindings (a-z)
-  | Binding | Command name                  | Orig | Rationale                               |
+  | Binding | Command name                  | Orig | Mnemonic                                |
   |---------+-------------------------------+------+-----------------------------------------|
   | a       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-ace-a][Hydra: Lispy Ace]]              |      |                                         |
   | b       | [[http://oremacs.com/lispy/#lispy-store-region-and-buffer][lispy-store-region-and-buffer]] | yes  |                                         |
@@ -97,7 +97,7 @@ There are three special cases:
   |---------+-------------------------------+------+-----------------------------------------|
 
 * Local bindings (A-Z)
-  | Binding | Command name             | Orig | Rationale          |
+  | Binding | Command name             | Orig | Mnemonic           |
   |---------+--------------------------+------+--------------------|
   | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  |                    |
   | B       | *available*              |      |                    |
