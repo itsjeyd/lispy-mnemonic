@@ -245,5 +245,6 @@
 (lispy-define-key lispy-mode-map (kbd "D") 'hydra-lispy-debug/body)
 (lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
 (lispy-define-key lispy-mode-map (kbd "E") 'lispy-ediff-regions)
+(lispy-define-key lispy-mode-map (kbd "U") 'lispy-unstringify)
 
 (provide 'lispy-mnemonic)

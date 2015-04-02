@@ -134,7 +134,7 @@ There are three special cases:
   | R       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
   | S       | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                    |
   | T       | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*        |
-  | U       | *unbound*                |      |                    |
+  | U       | lispy-unstringify        |      |                    |
   | V       | [[http://oremacs.com/lispy/#lispy-visit][lispy-visit]]              | yes  |                    |
   | W       | [[http://oremacs.com/lispy/#lispy-widen][lispy-widen]]              | yes  |                    |
   | X       | *unbound*                |      |                    |
