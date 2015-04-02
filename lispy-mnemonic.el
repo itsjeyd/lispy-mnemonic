@@ -106,8 +106,7 @@
 
 (defhydra hydra-lispy-mark ()
   "Lispy mark"
-  ("e" lispy-mark "expand")
-  ("m" lispy-mark "expand")
+  ("m" lispy-mark "mark (or expand)")
   ("l" lispy-mark-list "list")
   ("s" lispy-mark-symbol "symbol"))
 

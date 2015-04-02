@@ -198,7 +198,6 @@ There are three special cases:
 
    | Binding | Command name      |
    |---------+-------------------|
-   | e       | [[http://oremacs.com/lispy/#lispy-mark][lispy-mark]]        |
    | m       | [[http://oremacs.com/lispy/#lispy-mark][lispy-mark]]        |
    | l       | [[http://oremacs.com/lispy/#lispy-mark-list][lispy-mark-list]]   |
    | s       | [[http://oremacs.com/lispy/#lispy-mark-symbol][lispy-mark-symbol]] |
