@@ -179,9 +179,9 @@ There are three special cases:
 
    | Binding | Command name          |
    |---------+-----------------------|
-   | f       | [[http://oremacs.com/lispy/#lispy-follow][lispy-follow]]          |
    | a       | [[http://oremacs.com/lispy/#lispy-goto-def-ace][lispy-goto-def-ace]]    |
    | d       | [[http://oremacs.com/lispy/#lispy-goto-def-down][lispy-goto-def-down]]   |
+   | f       | [[http://oremacs.com/lispy/#lispy-follow][lispy-follow]]          |
    | g       | [[http://oremacs.com/lispy/#lispy-goto][lispy-goto]]            |
    | l       | [[http://oremacs.com/lispy/#lispy-goto-local][lispy-goto-local]]      |
    | p       | [[http://oremacs.com/lispy/#lispy-goto-projectile][lispy-goto-projectile]] |
