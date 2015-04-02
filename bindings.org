@@ -32,6 +32,25 @@ There are three special cases:
    and the command that =lispy= binds this sequence to will become
    unbound.
 
+* Table of Contents
+  - [[#global-bindings][Global bindings]]
+  - [[#local-bindings][Local bindings]]
+    - [[#a-z][a-z]]
+    - [[#a-z-1][A-Z]]
+  - [[#hydras][Hydras]]
+    - [[#lispy-ace-a][Lispy Ace]]
+    - [[#lispy-debug-s-d-d][Lispy Debug]]
+    - [[#lispy-eval-e][Lispy Eval]]
+    - [[#lispy-format-f][Lispy Format]]
+    - [[#lispy-goto-g][Lispy Goto]]
+    - [[#lispy-mark-s-m-m][Lispy Mark]]
+    - [[#lispy-move-m][Lispy Move]]
+    - [[#lispy-outline-o][Lispy Outline]]
+    - [[#lispy-raise-r][Lispy Raise]]
+    - [[#lispy-slurp-][Lispy Slurp]]
+    - [[#lispy-x-s-x-x][Lispy X]]
+  - [[#unbound-commands][Unbound commands]]
+
 * Global bindings
   | Binding    | Command name                   | Orig | Mnemonic                                         |
   |------------+--------------------------------+------+--------------------------------------------------|
