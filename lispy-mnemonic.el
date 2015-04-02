@@ -147,8 +147,8 @@
 
 ;; Global bindings (work in any context)
 
-(define-key lispy-mode-map (kbd "C-*") 'hydra-lispy-x/body)
 (define-key lispy-mode-map (kbd "s-d") 'hydra-lispy-debug/body)
+(define-key lispy-mode-map (kbd "s-x") 'hydra-lispy-x/body)
 (define-key lispy-mode-map (kbd "[") 'lispy-brackets)
 (define-key lispy-mode-map (kbd "C-1") 'lispy-string-oneline)
 (define-key lispy-mode-map (kbd "C-.") 'lispy-kill-at-point)

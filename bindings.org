@@ -46,10 +46,10 @@ There are three special cases:
   | s-m      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-c-return][Hydra: Lispy Mark]]         |      |                                                  |
   | s-r      | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]               |      |                                                  |
   | s-o      | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]] |      | Enhanced version of =open-line=                  |
+  | s-x      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-c--x][Hydra: Lispy X]]            |      |                                                  |
   | C-(, C-) | [[http://oremacs.com/lispy/#lispy-arglist-inline][lispy-arglist-inline]]      |      | Arglist of =defun= surrounded by =()=            |
   | C-;      | [[http://oremacs.com/lispy/#lispy-describe-inline][lispy-describe-inline]]     |      | "Comment" on function or currently-marked symbol |
   | C-.      | [[http://oremacs.com/lispy/#lispy-kill-at-point][lispy-kill-at-point]]       |      |                                                  |
-  | C-*      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-c--x][Hydra: Lispy X]]            |      | Both =x= and =*= signify multiplication          |
   | C-1      | [[http://oremacs.com/lispy/#lispy-string-oneline][lispy-string-oneline]]      |      |                                                  |
   | C-d      | [[http://oremacs.com/lispy/#lispy-delete][lispy-delete]]              | yes  |                                                  |
   | C-e      | [[http://oremacs.com/lispy/#lispy-move-end-of-line][lispy-move-end-of-line]]    | yes  |                                                  |
@@ -242,7 +242,7 @@ There are three special cases:
    | b       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]       |
    |---------+------------------|
 
-** Lispy X: =C-*=, =x=
+** Lispy X: =s-x=, =x=
    :PROPERTIES:
    :CUSTOM_ID: lispy-x
    :END:
