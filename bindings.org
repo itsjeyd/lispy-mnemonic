@@ -44,8 +44,8 @@ There are three special cases:
   | s-d      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]        |      |                                                  |
   | s-l      | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                |      |                                                  |
   | s-m      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-c-return][Hydra: Lispy Mark]]         |      |                                                  |
-  | s-r      | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]               |      |                                                  |
   | s-o      | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]] |      | Enhanced version of =open-line=                  |
+  | s-r      | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]               |      |                                                  |
   | s-x      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-c--x][Hydra: Lispy X]]            |      |                                                  |
   | C-(, C-) | [[http://oremacs.com/lispy/#lispy-arglist-inline][lispy-arglist-inline]]      |      | Arglist of =defun= surrounded by =()=            |
   | C-;      | [[http://oremacs.com/lispy/#lispy-describe-inline][lispy-describe-inline]]     |      | "Comment" on function or currently-marked symbol |
