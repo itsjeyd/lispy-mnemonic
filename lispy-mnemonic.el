@@ -86,7 +86,7 @@
 (defhydra hydra-lispy-eval (:color blue)
   "Lispy eval"
   ("e" lispy-eval "eval")
-  ("r" lispy-eval-and-replace "replace")
+  ("r" lispy-eval-and-replace "replace" :color red)
   ("o" lispy-eval-other-window "other window")
   ("i" lispy-eval-and-insert "insert")
   ("c" lispy-eval-and-comment "comment"))
