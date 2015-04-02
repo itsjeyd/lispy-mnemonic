@@ -147,23 +147,25 @@
 
 ;; Global bindings (work in any context)
 
-(define-key lispy-mode-map (kbd "s-d") 'hydra-lispy-debug/body)
-(define-key lispy-mode-map (kbd "s-x") 'hydra-lispy-x/body)
 (define-key lispy-mode-map (kbd "[") 'lispy-brackets)
-(define-key lispy-mode-map (kbd "C-1") 'lispy-string-oneline)
-(define-key lispy-mode-map (kbd "C-.") 'lispy-kill-at-point)
-(define-key lispy-mode-map (kbd "C-;") 'lispy-describe-inline)
+(define-key lispy-mode-map (kbd "s-d") 'hydra-lispy-debug/body)
+(define-key lispy-mode-map (kbd "s-m") 'hydra-lispy-mark/body)
+(define-key lispy-mode-map (kbd "s-x") 'hydra-lispy-x/body)
 (define-key lispy-mode-map (kbd "C-(") 'lispy-arglist-inline)
 (define-key lispy-mode-map (kbd "C-)") 'lispy-arglist-inline)
+(define-key lispy-mode-map (kbd "C-;") 'lispy-describe-inline)
+(define-key lispy-mode-map (kbd "C-.") 'lispy-kill-at-point)
+(define-key lispy-mode-map (kbd "C-1") 'lispy-string-oneline)
 (define-key lispy-mode-map (kbd "M-n") 'lispy-forward)
 (define-key lispy-mode-map (kbd "M-p") 'lispy-backward)
 (define-key lispy-mode-map (kbd "M-o") 'lispy-parens-down)
 (define-key lispy-mode-map (kbd "s-l") 'lispy-left)
-(define-key lispy-mode-map (kbd "s-m") 'hydra-lispy-mark/body)
-(define-key lispy-mode-map (kbd "s-r") 'lispy-right)
 (define-key lispy-mode-map (kbd "s-o") 'lispy-out-forward-newline)
+(define-key lispy-mode-map (kbd "s-r") 'lispy-right)
 
-;; Local (work in "special" only)
+;; Local bindings (work in "special" only)
+
+;; a-z
 
 (lispy-define-key lispy-mode-map (kbd "a") 'hydra-lispy-ace/body)
 (lispy-define-key lispy-mode-map (kbd "e") 'hydra-lispy-eval/body)
@@ -171,19 +173,22 @@
 (lispy-define-key lispy-mode-map (kbd "m") 'hydra-lispy-move/body)
 (lispy-define-key lispy-mode-map (kbd "x") 'hydra-lispy-x/body)
 (lispy-define-key lispy-mode-map (kbd ">") 'hydra-lispy-slurp/body)
-(lispy-define-key lispy-mode-map (kbd "D") 'hydra-lispy-debug/body)
-(lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
 (lispy-define-key lispy-mode-map (kbd "d") 'lispy-down)
 (lispy-define-key lispy-mode-map (kbd "l") 'lispy-left)
 (lispy-define-key lispy-mode-map (kbd "n") 'lispy-forward)
 (lispy-define-key lispy-mode-map (kbd "o") 'lispy-occur)
 (lispy-define-key lispy-mode-map (kbd "p") 'lispy-backward)
 (lispy-define-key lispy-mode-map (kbd "r") 'lispy-right)
-(lispy-define-key lispy-mode-map (kbd "u") 'lispy-up)
 (lispy-define-key lispy-mode-map (kbd "s") 'lispy-different)
+(lispy-define-key lispy-mode-map (kbd "u") 'lispy-up)
 (lispy-define-key lispy-mode-map (kbd "w") 'lispy-new-copy)
-(lispy-define-key lispy-mode-map (kbd "/") 'lispy-undo)
 (lispy-define-key lispy-mode-map (kbd "*") 'pop-tag-mark)
+(lispy-define-key lispy-mode-map (kbd "/") 'lispy-undo)
+
+;; A-Z
+
+(lispy-define-key lispy-mode-map (kbd "D") 'hydra-lispy-debug/body)
+(lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
 (lispy-define-key lispy-mode-map (kbd "E") 'lispy-ediff-regions)
 
 (provide 'lispy-mnemonic)
