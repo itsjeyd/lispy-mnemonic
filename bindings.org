@@ -190,7 +190,7 @@ There are three special cases:
    | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]          |
    |---------+-----------------------|
 
-** Lispy Mark: =<s-m>=
+** Lispy Mark: =s-m=
    :PROPERTIES:
    :CUSTOM_ID: lispy-mark
    :END:
