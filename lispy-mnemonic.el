@@ -144,9 +144,9 @@
 
 (defhydra hydra-lispy-goto (:color blue)
   "Lispy goto"
-  ("f" lispy-follow "follow")
   ("a" lispy-goto-def-ace "ace")
   ("d" lispy-goto-def-down "down")
+  ("f" lispy-follow "follow")
   ("g" lispy-goto "goto")
   ("l" lispy-goto-local "local")
   ("p" lispy-goto-projectile "projectile")
