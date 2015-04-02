@@ -51,7 +51,7 @@ There are three special cases:
   | s-m        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]              |      |                                                  |
   | s-o        | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]]      |      | Enhanced version of =open-line=                  |
   | s-r        | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]                    |      |                                                  |
-  | s-x        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-c--x][Hydra: Lispy X]]                 |      |                                                  |
+  | s-x        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]                 |      |                                                  |
   | C-(, C-)   | [[http://oremacs.com/lispy/#lispy-arglist-inline][lispy-arglist-inline]]           |      | Arglist of =defun= surrounded by =()=            |
   | C-;        | [[http://oremacs.com/lispy/#lispy-describe-inline][lispy-describe-inline]]          |      | "Comment" on function or currently-marked symbol |
   | C-.        | [[http://oremacs.com/lispy/#lispy-kill-at-point][lispy-kill-at-point]]            |      |                                                  |
@@ -102,7 +102,7 @@ There are three special cases:
   | u       | [[http://oremacs.com/lispy/#lispy-up][lispy-up]]           |      |                                         |
   | v       | [[http://oremacs.com/lispy/#lispy-view][lispy-view]]         | yes  |                                         |
   | w       | [[http://oremacs.com/lispy/#lispy-new-copy][lispy-new-copy]]     |      | =M-w= copies region                     |
-  | x       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-c--x][Hydra: Lispy X]]     |      |                                         |
+  | x       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]     |      |                                         |
   | y       | *available*        |      |                                         |
   | z       | lispy-repeat       |      | =C-x z= runs =repeat=                   |
   | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]       |      | Default binding: =M-*=                  |
