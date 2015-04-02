@@ -145,14 +145,14 @@
 (defhydra hydra-lispy-goto (:color blue)
   "Lispy goto"
   ("f" lispy-follow "follow")
-  ("a" lispy-goto-def-ace "definition (ace)")
-  ("d" lispy-goto-def-down "definition (down)")
+  ("a" lispy-goto-def-ace "ace")
+  ("d" lispy-goto-def-down "down")
   ("g" lispy-goto "goto")
   ("l" lispy-goto-local "local")
   ("p" lispy-goto-projectile "projectile")
   ("r" lispy-goto-recursive "recursive")
-  ("s" lispy-goto-symbol "definition")
-  ("." lispy-goto-symbol "definition")
+  ("s" lispy-goto-symbol "symbol")
+  ("." lispy-goto-symbol "symbol")
   ("*" pop-tag-mark "pop tag mark"))
 
 (defhydra hydra-lispy-mark ()
