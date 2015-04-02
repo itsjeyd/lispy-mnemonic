@@ -43,6 +43,7 @@ There are three special cases:
   | ;        | [[http://oremacs.com/lispy/#lispy-comment][lispy-comment]]             | yes  |                                                  |
   | s-d      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]        |      |                                                  |
   | s-l      | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                |      |                                                  |
+  | s-m      | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-c-return][Hydra: Lispy Mark]]         |      |                                                  |
   | s-r      | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]               |      |                                                  |
   | s-o      | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]] |      | Enhanced version of =open-line=                  |
   | C-(, C-) | [[http://oremacs.com/lispy/#lispy-arglist-inline][lispy-arglist-inline]]      |      | Arglist of =defun= surrounded by =()=            |
@@ -54,7 +55,6 @@ There are three special cases:
   | C-e      | [[http://oremacs.com/lispy/#lispy-move-end-of-line][lispy-move-end-of-line]]    | yes  |                                                  |
   | C-k      | [[http://oremacs.com/lispy/#lispy-kill][lispy-kill]]                | yes  |                                                  |
   | C-y      | [[http://oremacs.com/lispy/#lispy-yank][lispy-yank]]                | yes  |                                                  |
-  | C-RET    | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-c-return][Hydra: Lispy Mark]]         |      |                                                  |
   | DEL      | [[http://oremacs.com/lispy/#lispy-delete-backward][lispy-delete-backward]]     | yes  |                                                  |
   | M-n      | [[http://oremacs.com/lispy/#lispy-forward][lispy-forward]]             |      | Equivalent to =forward-list= (=C-M-n=)           |
   | M-o      | [[http://oremacs.com/lispy/#lispy-parens-down][lispy-parens-down]]         |      | Enhanced version of =open-line=                  |

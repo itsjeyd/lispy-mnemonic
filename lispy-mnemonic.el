@@ -148,7 +148,6 @@
 
 ;; Global bindings (work in any context)
 
-(define-key lispy-mode-map (kbd "<C-return>") 'hydra-lispy-mark/body)
 (define-key lispy-mode-map (kbd "C-*") 'hydra-lispy-x/body)
 (define-key lispy-mode-map (kbd "s-d") 'hydra-lispy-debug/body)
 (define-key lispy-mode-map (kbd "[") 'lispy-brackets)
@@ -161,6 +160,7 @@
 (define-key lispy-mode-map (kbd "M-p") 'lispy-backward)
 (define-key lispy-mode-map (kbd "M-o") 'lispy-parens-down)
 (define-key lispy-mode-map (kbd "s-l") 'lispy-left)
+(define-key lispy-mode-map (kbd "s-m") 'hydra-lispy-mark/body)
 (define-key lispy-mode-map (kbd "s-r") 'lispy-right)
 (define-key lispy-mode-map (kbd "s-o") 'lispy-out-forward-newline)
 
