@@ -214,8 +214,11 @@ There are three special cases:
    | Binding | Command name      |
    |---------+-------------------|
    | m       | [[http://oremacs.com/lispy/#lispy-mark][lispy-mark]]        |
+   | c       | lispy-mark-car    |
    | l       | [[http://oremacs.com/lispy/#lispy-mark-list][lispy-mark-list]]   |
    | s       | [[http://oremacs.com/lispy/#lispy-mark-symbol][lispy-mark-symbol]] |
+   | L       | lispy-mark-left   |
+   | R       | lispy-mark-right  |
    |---------+-------------------|
 
 ** Lispy Move: =m=

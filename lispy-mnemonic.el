@@ -158,8 +158,11 @@
 (defhydra hydra-lispy-mark ()
   "Lispy mark"
   ("m" lispy-mark "mark (or expand)")
+  ("c" lispy-mark-car "car")
   ("l" lispy-mark-list "list")
-  ("s" lispy-mark-symbol "symbol"))
+  ("s" lispy-mark-symbol "symbol")
+  ("L" lispy-mark-left "left")
+  ("R" lispy-mark-right "right"))
 
 (defhydra hydra-lispy-move ()
   "Lispy move"
