@@ -119,8 +119,7 @@
 
 (defhydra hydra-lispy-raise ()
   "Lispy raise"
-  ("r" lispy-raise "this")
-  ("t" lispy-raise "this")
+  ("r" lispy-raise "raise")
   ("s" lispy-raise-some "some"))
 
 (defhydra hydra-lispy-slurp ()

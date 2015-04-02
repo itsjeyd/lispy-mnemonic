@@ -224,7 +224,6 @@ There are three special cases:
    | Binding | Command name     |
    |---------+------------------|
    | r       | [[http://oremacs.com/lispy/#lispy-raise][lispy-raise]]      |
-   | t       | [[http://oremacs.com/lispy/#lispy-raise][lispy-raise]]      |
    | s       | [[http://oremacs.com/lispy/#lispy-raise-some][lispy-raise-some]] |
    |---------+------------------|
 
