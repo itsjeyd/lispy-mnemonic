@@ -48,7 +48,7 @@ There are three special cases:
   | ^          | lispy-hat                      | yes  |                                                  |
   | s-d        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]             |      |                                                  |
   | s-l        | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                     |      |                                                  |
-  | s-m        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-c-return][Hydra: Lispy Mark]]              |      |                                                  |
+  | s-m        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]              |      |                                                  |
   | s-o        | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]]      |      | Enhanced version of =open-line=                  |
   | s-r        | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]                    |      |                                                  |
   | s-x        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-c--x][Hydra: Lispy X]]                 |      |                                                  |
@@ -91,7 +91,7 @@ There are three special cases:
   | j       | *available*        |      |                                         |
   | k       | *available*        |      |                                         |
   | l       | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]         |      |                                         |
-  | m       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-move-m][Hydra: Lispy Move]]  |      |                                         |
+  | m       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]  |      |                                         |
   | n       | [[http://oremacs.com/lispy/#lispy-forward][lispy-forward]]      |      | Equivalent to =forward-list= (=C-M-n=)  |
   | o       | [[http://oremacs.com/lispy/#lispy-occur][lispy-occur]]        |      |                                         |
   | p       | [[http://oremacs.com/lispy/#lispy-backward][lispy-backward]]     |      | Equivalent to =backward-list= (=C-M-p=) |
@@ -126,7 +126,7 @@ There are three special cases:
   | J       | [[http://oremacs.com/lispy/#lispy-outline-next][lispy-outline-next]]       | yes  |                    |
   | K       | [[http://oremacs.com/lispy/#lispy-outline-prev][lispy-outline-prev]]       | yes  |                    |
   | L       | *endangered*             |      |                    |
-  | M       | *available*              |      |                    |
+  | M       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-move-m][Hydra: Lispy Move]]        |      |                    |
   | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
   | O       | *available*              |      |                    |
   | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
@@ -217,7 +217,7 @@ There are three special cases:
    | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]          |
    |---------+-----------------------|
 
-** Lispy Mark: =s-m=
+** Lispy Mark: =s-m=, =m=
    :PROPERTIES:
    :CUSTOM_ID: lispy-mark
    :END:
@@ -232,7 +232,7 @@ There are three special cases:
    | R       | lispy-mark-right  |
    |---------+-------------------|
 
-** Lispy Move: =m=
+** Lispy Move: =M=
    :PROPERTIES:
    :CUSTOM_ID: lispy-move
    :END:

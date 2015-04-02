@@ -230,7 +230,7 @@
 (lispy-define-key lispy-mode-map (kbd "a") 'hydra-lispy-ace/body)
 (lispy-define-key lispy-mode-map (kbd "e") 'hydra-lispy-eval/body)
 (lispy-define-key lispy-mode-map (kbd "g") 'hydra-lispy-goto/body)
-(lispy-define-key lispy-mode-map (kbd "m") 'hydra-lispy-move/body)
+(lispy-define-key lispy-mode-map (kbd "m") 'hydra-lispy-mark/body)
 (lispy-define-key lispy-mode-map (kbd "x") 'hydra-lispy-x/body)
 (lispy-define-key lispy-mode-map (kbd ">") 'hydra-lispy-slurp/body)
 (lispy-define-key lispy-mode-map (kbd "d") 'lispy-down)
@@ -250,6 +250,7 @@
 
 (lispy-define-key lispy-mode-map (kbd "D") 'hydra-lispy-debug/body)
 (lispy-define-key lispy-mode-map (kbd "F") 'hydra-lispy-format/body)
+(lispy-define-key lispy-mode-map (kbd "M") 'hydra-lispy-move/body)
 (lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
 (lispy-define-key lispy-mode-map (kbd "E") 'lispy-ediff-regions)
 (lispy-define-key lispy-mode-map (kbd "U") 'lispy-unstringify)
