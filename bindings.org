@@ -119,7 +119,7 @@ There are three special cases:
   | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
   | D       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]       |      |                    |
   | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
-  | F       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Format]]      |      |                    |
+  | F       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-format-f][Hydra: Lispy Format]]      |      |                    |
   | G       | *available*              |      |                    |
   | H       | *available*              |      |                    |
   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
