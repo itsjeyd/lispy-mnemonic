@@ -237,6 +237,7 @@
 (lispy-define-key lispy-mode-map (kbd "s") 'lispy-different)
 (lispy-define-key lispy-mode-map (kbd "u") 'lispy-up)
 (lispy-define-key lispy-mode-map (kbd "w") 'lispy-new-copy)
+(lispy-define-key lispy-mode-map (kbd "z") 'lispy-repeat)
 (lispy-define-key lispy-mode-map (kbd "*") 'pop-tag-mark)
 (lispy-define-key lispy-mode-map (kbd "/") 'lispy-undo)
 

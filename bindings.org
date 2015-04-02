@@ -104,7 +104,7 @@ There are three special cases:
   | w       | [[http://oremacs.com/lispy/#lispy-new-copy][lispy-new-copy]]     |      | =M-w= copies region                     |
   | x       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-c--x][Hydra: Lispy X]]     |      |                                         |
   | y       | *available*        |      |                                         |
-  | z       | *endangered*       |      |                                         |
+  | z       | lispy-repeat       |      | =C-x z= runs =repeat=                   |
   | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]       |      | Default binding: =M-*=                  |
   | /       | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]         |      | =C-/= runs =undo=                       |
   | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]         | yes  |                                         |
