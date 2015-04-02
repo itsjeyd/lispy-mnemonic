@@ -276,3 +276,46 @@ There are three special cases:
    | b       | lispy-bind-variable    |
    | u       | [[http://oremacs.com/lispy/#lispy-unbind-variable][lispy-unbind-variable]]  |
    |---------+------------------------|
+
+* Unbound commands
+  The following table lists commands that currently lack a mnemonic
+  key binding. Not all of them are unbound: If Lispy provides global
+  and/or local bindings for a given command, these are listed in the
+  second and third column of the table, respectively.
+
+  Note that =lispy-iedit= and =lispy-join= /are/ bound to mnemonic key
+  sequences (=M-i= and =M-J=, respectively). However, in vanilla Emacs
+  these key sequences are used to bind commands that are unrelated to
+  the functionality that =lispy-iedit= and =lispy-join= provide: =M-i=
+  is bound to =tab-to-tab-stop= and =M-J= is bound to
+  =indent-new-comment-line=. Future versions of =lispy-mnemonic= will
+  (hopefully) include mnemonic bindings for =lispy-iedit= and
+  =lispy-join= that respect existing bindings.
+
+  | Command name                  | Lispy global | Lispy local |
+  |-------------------------------+--------------+-------------|
+  | lispy-alt-line                |              |             |
+  | lispy-arglist                 |              |             |
+  | lispy-build-semanticdb        |              |             |
+  | lispy-clockwise               |              |             |
+  | lispy-counterclockwise        |              |             |
+  | lispy-cursor-ace              | C-4 m        |             |
+  | lispy-cursor-down             | C-7          |             |
+  | lispy-expr-canonical-p        |              |             |
+  | lispy-font-lock-ensure        |              |             |
+  | lispy-goto-mode               |              |             |
+  | lispy-iedit                   | M-i          |             |
+  | lispy-join                    | M-J          | +           |
+  | lispy-knight-down             |              |             |
+  | lispy-knight-up               |              |             |
+  | lispy-open-line               | <C-return>   |             |
+  | lispy-other-mode              |              |             |
+  | lispy-other-space             |              |             |
+  | lispy-outline-goto-child      |              | L           |
+  | lispy-quit                    |              |             |
+  | lispy-splice                  |              |             |
+  | lispy-split                   | M-j          |             |
+  | lispy-store-region-and-buffer | C-4 B        |             |
+  | lispy-transform-mode          |              |             |
+  | lispy-view-test               | C-4 v        |             |
+  |-------------------------------+--------------+-------------|
