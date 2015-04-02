@@ -123,12 +123,12 @@ There are three special cases:
   | G       | *available*              |      |                    |
   | H       | *available*              |      |                    |
   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
-  | J       | [[http://oremacs.com/lispy/#lispy-outline-next][lispy-outline-next]]       | yes  |                    |
-  | K       | [[http://oremacs.com/lispy/#lispy-outline-prev][lispy-outline-prev]]       | yes  |                    |
-  | L       | *endangered*             |      |                    |
+  | J       | *available*              |      |                    |
+  | K       | *available*              |      |                    |
+  | L       | *available*              |      |                    |
   | M       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-move-m][Hydra: Lispy Move]]        |      |                    |
   | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
-  | O       | *available*              |      |                    |
+  | O       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-outline-o][Hydra: Lispy Outline]]     |      |                    |
   | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
   | Q       | *available*              |      |                    |
   | R       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
@@ -245,6 +245,22 @@ There are three special cases:
    | u       | [[http://oremacs.com/lispy/#lispy-move-up][lispy-move-up]]    |
    |---------+------------------|
 
+** Lispy Outline: =O=
+   :PROPERTIES:
+   :CUSTOM_ID: lispy-outline
+   :END:
+
+   | Binding | Command name             |
+   |---------+--------------------------|
+   | i       | [[http://oremacs.com/lispy/#lispy-tab][lispy-tab]]                |
+   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           |
+   | n       | [[http://oremacs.com/lispy/#lispy-outline-next][lispy-outline-next]]       |
+   | p       | [[http://oremacs.com/lispy/#lispy-outline-prev][lispy-outline-prev]]       |
+   | c       | lispy-outline-goto-child |
+   | l       | lispy-outline-left       |
+   | r       | lispy-outline-right      |
+   |---------+--------------------------|
+
 ** Lispy Raise: =R=
    :PROPERTIES:
    :CUSTOM_ID: lispy-raise
@@ -322,7 +338,6 @@ There are three special cases:
   | lispy-open-line               | <C-return>   |             |
   | lispy-other-mode              |              |             |
   | lispy-other-space             |              |             |
-  | lispy-outline-goto-child      |              | L           |
   | lispy-quit                    |              |             |
   | lispy-splice                  |              |             |
   | lispy-split                   | M-j          |             |

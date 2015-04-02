@@ -176,6 +176,16 @@
   ("r" lispy-move-right "right")
   ("u" lispy-move-up "up"))
 
+(defhydra hydra-lispy-outline ()
+  "Lispy outline"
+  ("i" lispy-tab "tab")
+  ("I" lispy-shifttab "shift-tab")
+  ("n" lispy-outline-next "next")
+  ("p" lispy-outline-prev "previous")
+  ("c" lispy-outline-goto-child "child")
+  ("l" lispy-outline-left "left")
+  ("r" lispy-outline-right "right"))
+
 (defhydra hydra-lispy-raise ()
   "Lispy raise"
   ("r" lispy-raise "raise")
@@ -251,6 +261,7 @@
 (lispy-define-key lispy-mode-map (kbd "D") 'hydra-lispy-debug/body)
 (lispy-define-key lispy-mode-map (kbd "F") 'hydra-lispy-format/body)
 (lispy-define-key lispy-mode-map (kbd "M") 'hydra-lispy-move/body)
+(lispy-define-key lispy-mode-map (kbd "O") 'hydra-lispy-outline/body)
 (lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
 (lispy-define-key lispy-mode-map (kbd "E") 'lispy-ediff-regions)
 (lispy-define-key lispy-mode-map (kbd "U") 'lispy-unstringify)
