@@ -255,5 +255,6 @@ There are three special cases:
    | i       | [[http://oremacs.com/lispy/#lispy-to-ifs][lispy-to-ifs]]           |
    | l       | [[http://oremacs.com/lispy/#lispy-to-lambda][lispy-to-lambda]]        |
    | r       | [[http://oremacs.com/lispy/#lispy-eval-and-replace][lispy-eval-and-replace]] |
+   | b       | lispy-bind-variable    |
    | u       | [[http://oremacs.com/lispy/#lispy-unbind-variable][lispy-unbind-variable]]  |
    |---------+------------------------|

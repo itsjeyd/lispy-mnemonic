@@ -190,6 +190,7 @@
   ("i" lispy-to-ifs "to ifs")
   ("l" lispy-to-lambda "to lambda")
   ("r" lispy-eval-and-replace "replace")
+  ("b" lispy-bind-variable "bind variable")
   ("u" lispy-unbind-variable "unbind variable"))
 
 ;;;;;;;;;;;;;;;;;;;;
