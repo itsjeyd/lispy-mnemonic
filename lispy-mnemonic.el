@@ -142,6 +142,11 @@
   ("i" lispy-eval-and-insert "insert")
   ("c" lispy-eval-and-comment "comment"))
 
+(defhydra hydra-lispy-format ()
+  "Lispy format"
+  ("o" lispy-oneline "one line")
+  ("m" lispy-multiline "multiple lines"))
+
 (defhydra hydra-lispy-goto (:color blue)
   "Lispy goto"
   ("a" lispy-goto-def-ace "ace")
@@ -244,6 +249,7 @@
 ;; A-Z
 
 (lispy-define-key lispy-mode-map (kbd "D") 'hydra-lispy-debug/body)
+(lispy-define-key lispy-mode-map (kbd "F") 'hydra-lispy-format/body)
 (lispy-define-key lispy-mode-map (kbd "R") 'hydra-lispy-raise/body)
 (lispy-define-key lispy-mode-map (kbd "E") 'lispy-ediff-regions)
 (lispy-define-key lispy-mode-map (kbd "U") 'lispy-unstringify)

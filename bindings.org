@@ -119,16 +119,16 @@ There are three special cases:
   | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
   | D       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]       |      |                    |
   | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
-  | F       | *available*              |      |                    |
+  | F       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Format]]      |      |                    |
   | G       | *available*              |      |                    |
   | H       | *available*              |      |                    |
   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
   | J       | [[http://oremacs.com/lispy/#lispy-outline-next][lispy-outline-next]]       | yes  |                    |
   | K       | [[http://oremacs.com/lispy/#lispy-outline-prev][lispy-outline-prev]]       | yes  |                    |
   | L       | *endangered*             |      |                    |
-  | M       | [[http://oremacs.com/lispy/#lispy-multiline][lispy-multiline]]          | yes  |                    |
+  | M       | *available*              |      |                    |
   | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
-  | O       | [[http://oremacs.com/lispy/#lispy-oneline][lispy-oneline]]            | yes  |                    |
+  | O       | *available*              |      |                    |
   | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
   | Q       | *available*              |      |                    |
   | R       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
@@ -186,6 +186,17 @@ There are three special cases:
    | i       | [[http://oremacs.com/lispy/#lispy-eval-and-insert][lispy-eval-and-insert]]   |
    | c       | [[http://oremacs.com/lispy/#lispy-eval-and-comment][lispy-eval-and-comment]]  |
    |---------+-------------------------|
+
+** Lispy Format: =F=
+   :PROPERTIES:
+   :CUSTOM_ID: lispy-format
+   :END:
+
+   | Binding | Command name    |
+   |---------+-----------------|
+   | o       | [[http://oremacs.com/lispy/#lispy-oneline][lispy-oneline]]   |
+   | m       | [[http://oremacs.com/lispy/#lispy-multiline][lispy-multiline]] |
+   |---------+-----------------|
 
 ** Lispy Goto: =g=
    :PROPERTIES:
