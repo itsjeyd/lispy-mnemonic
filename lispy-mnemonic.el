@@ -99,6 +99,32 @@
 ;;
 ;; See [6] for a full list of bindings.
 ;;
+;; Customization
+;;
+;; By default, lispy-mnemonic does not alter Lispy bindings that
+;; conflict with default bindings for built-in commands. If you would
+;; like to restore the original behavior of any bindings that Lispy
+;; overrides, add the following to your init-file:
+;;
+;;     (add-hook 'lispy-mode-hook 'lispy-mnemonic-restore-bindings)
+;;
+;; Here is a list of bindings that will be restored:
+;;
+;;  | Keys | Command                 |
+;;  |------+-------------------------|
+;;  | C-2  | digit-argument          |
+;;  | C-3  | digit-argument          |
+;;  | C-4  | digit-argument          |
+;;  | C-7  | digit-argument          |
+;;  | C-8  | digit-argument          |
+;;  | C-9  | digit-argument          |
+;;  | M-,  | tags-loop-continue      |
+;;  | M-m  | back-to-indentation     |
+;;  | M-i  | tab-to-tab-stop         |
+;;  | M-j  | indent-new-comment-line |
+;;  | M-J  | indent-new-comment-line |
+;;  |------+-------------------------|
+;;
 ;; Links
 ;;
 ;; [1] https://en.wikipedia.org/wiki/Mnemonic
@@ -112,6 +138,20 @@
 
 (require 'lispy)
 (require 'hydra)
+
+(defun lispy-mnemonic-restore-bindings ()
+  "Restore default bindings for commands that ship with Emacs."
+  (define-key lispy-mode-map (kbd "C-2") nil)
+  (define-key lispy-mode-map (kbd "C-3") nil)
+  (define-key lispy-mode-map (kbd "C-4") nil)
+  (define-key lispy-mode-map (kbd "C-7") nil)
+  (define-key lispy-mode-map (kbd "C-8") nil)
+  (define-key lispy-mode-map (kbd "C-9") nil)
+  (define-key lispy-mode-map (kbd "M-,") nil)
+  (define-key lispy-mode-map (kbd "M-m") nil)
+  (define-key lispy-mode-map (kbd "M-i") nil)
+  (define-key lispy-mode-map (kbd "M-j") nil)
+  (define-key lispy-mode-map (kbd "M-J") nil))
 
 ;;;;;;;;;;;;;
 ;;; Hydra ;;;
