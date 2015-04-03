@@ -86,6 +86,7 @@ There are three special cases:
   | C-y        | [[http://oremacs.com/lispy/#lispy-yank][lispy-yank]]                     | yes  |                                                  |
   | DEL        | [[http://oremacs.com/lispy/#lispy-delete-backward][lispy-delete-backward]]          | yes  |                                                  |
   | RET        | lispy-newline-and-indent-plain | yes  |                                                  |
+  | M-*        | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]                   | yes  |                                                  |
   | M-d        | [[http://oremacs.com/lispy/#lispy-kill-word][lispy-kill-word]]                | yes  |                                                  |
   | M-k        | [[http://oremacs.com/lispy/#lispy-kill-sentence][lispy-kill-sentence]]            | yes  |                                                  |
   | M-n        | [[http://oremacs.com/lispy/#lispy-forward][lispy-forward]]                  |      | Equivalent to =forward-list= (=C-M-n=)           |
@@ -93,6 +94,7 @@ There are three special cases:
   | M-p        | [[http://oremacs.com/lispy/#lispy-backward][lispy-backward]]                 |      | Equivalent to =backward-list= (=C-M-p=)          |
   | M-q        | lispy-fill                     | yes  | =M-q= runs =fill-paragraph=                      |
   | M-DEL      | [[http://oremacs.com/lispy/#lispy-backward-kill-word][lispy-backward-kill-word]]       | yes  |                                                  |
+  | <backtab>  | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]                 | yes  |                                                  |
   | <M-left>   | lispy-outline-left             | yes  |                                                  |
   | <M-right>  | lispy-outline-right            | yes  |                                                  |
   | <M-return> | lispy-meta-return              | yes  |                                                  |
@@ -128,6 +130,7 @@ There are three special cases:
    | x       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]     |      |                                         |
    | y       | *available*        |      |                                         |
    | z       | lispy-repeat       |      | =C-x z= runs =repeat=                   |
+   | ~       | lispy-tilde        | yes  |                                         |
    | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]       |      | Default binding: =M-*=                  |
    | /       | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]         |      | =C-/= runs =undo=                       |
    | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]         | yes  |                                         |
