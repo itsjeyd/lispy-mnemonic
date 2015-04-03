@@ -66,10 +66,13 @@ There are three special cases:
   | #          | lispy-hash                     | yes  |                                                  |
   | ^          | lispy-hat                      | yes  |                                                  |
   | s-d        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]             |      |                                                  |
+  | s-i        | lispy-iedit                    |      |                                                  |
+  | s-j        | lispy-join                     |      |                                                  |
   | s-l        | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                     |      |                                                  |
   | s-m        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]              |      |                                                  |
   | s-o        | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]]      |      | Enhanced version of =open-line=                  |
   | s-r        | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]                    |      |                                                  |
+  | s-s        | lispy-split                    |      |                                                  |
   | s-x        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]                 |      |                                                  |
   | C-(, C-)   | [[http://oremacs.com/lispy/#lispy-arglist-inline][lispy-arglist-inline]]           |      | Arglist of =defun= surrounded by =()=            |
   | C-;        | [[http://oremacs.com/lispy/#lispy-describe-inline][lispy-describe-inline]]          |      | "Comment" on function or currently-marked symbol |
@@ -330,15 +333,6 @@ There are three special cases:
   and/or local bindings for a given command, these are listed in the
   second and third column of the table, respectively.
 
-  Note that =lispy-iedit= and =lispy-join= /are/ bound to mnemonic key
-  sequences (=M-i= and =M-J=, respectively). However, in vanilla Emacs
-  these key sequences are used to bind commands that are unrelated to
-  the functionality that =lispy-iedit= and =lispy-join= provide: =M-i=
-  is bound to =tab-to-tab-stop= and =M-J= is bound to
-  =indent-new-comment-line=. Future versions of =lispy-mnemonic= will
-  (hopefully) include mnemonic bindings for =lispy-iedit= and
-  =lispy-join= that respect existing bindings.
-
   | Command name                  | Lispy global | Lispy local |
   |-------------------------------+--------------+-------------|
   | lispy-alt-line                |              |             |
@@ -351,8 +345,6 @@ There are three special cases:
   | lispy-expr-canonical-p        |              |             |
   | lispy-font-lock-ensure        |              |             |
   | lispy-goto-mode               |              |             |
-  | lispy-iedit                   | M-i          |             |
-  | lispy-join                    | M-J          | +           |
   | lispy-knight-down             |              |             |
   | lispy-knight-up               |              |             |
   | lispy-open-line               | <C-return>   |             |
@@ -360,7 +352,6 @@ There are three special cases:
   | lispy-other-space             |              |             |
   | lispy-quit                    |              |             |
   | lispy-splice                  |              |             |
-  | lispy-split                   | M-j          |             |
   | lispy-store-region-and-buffer | C-4 B        |             |
   | lispy-transform-mode          |              |             |
   | lispy-view-test               | C-4 v        |             |

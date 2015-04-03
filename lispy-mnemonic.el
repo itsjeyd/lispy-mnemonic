@@ -229,9 +229,11 @@
 (define-key lispy-mode-map (kbd "M-n") 'lispy-forward)
 (define-key lispy-mode-map (kbd "M-p") 'lispy-backward)
 (define-key lispy-mode-map (kbd "M-o") 'lispy-parens-down)
-(define-key lispy-mode-map (kbd "s-l") 'lispy-left)
+(define-key lispy-mode-map (kbd "s-i") 'lispy-iedit)
+(define-key lispy-mode-map (kbd "s-j") 'lispy-join)
 (define-key lispy-mode-map (kbd "s-o") 'lispy-out-forward-newline)
 (define-key lispy-mode-map (kbd "s-r") 'lispy-right)
+(define-key lispy-mode-map (kbd "s-s") 'lispy-split)
 
 ;; Local bindings (work in "special" only)
 
