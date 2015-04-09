@@ -52,6 +52,9 @@ There are three special cases:
   - [[#unbound-commands][Unbound commands]]
 
 * Global bindings
+  :PROPERTIES:
+  :CUSTOM_ID: global-bindings
+  :END:
   | Binding    | Command name                   | Orig | Mnemonic                                         |
   |------------+--------------------------------+------+--------------------------------------------------|
   | `          | lispy-backtick                 | yes  |                                                  |
@@ -65,15 +68,15 @@ There are three special cases:
   | ;          | [[http://oremacs.com/lispy/#lispy-comment][lispy-comment]]                  | yes  |                                                  |
   | #          | lispy-hash                     | yes  |                                                  |
   | ^          | lispy-hat                      | yes  |                                                  |
-  | s-d        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d][Hydra: Lispy Debug]]             |      |                                                  |
+  | s-d        | [[#lispy-debug-s-d][Hydra: Lispy Debug]]             |      |                                                  |
   | s-i        | lispy-iedit                    |      |                                                  |
   | s-j        | lispy-join                     |      |                                                  |
   | s-l        | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                     |      |                                                  |
-  | s-m        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]              |      |                                                  |
+  | s-m        | [[#lispy-mark-s-m-m][Hydra: Lispy Mark]]              |      |                                                  |
   | s-o        | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]]      |      | Enhanced version of =open-line=                  |
   | s-r        | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]                    |      |                                                  |
   | s-s        | lispy-split                    |      |                                                  |
-  | s-x        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]                 |      |                                                  |
+  | s-x        | [[#lispy-x-s-x-x][Hydra: Lispy X]]                 |      |                                                  |
   | C-(, C-)   | [[http://oremacs.com/lispy/#lispy-arglist-inline][lispy-arglist-inline]]           |      | Arglist of =defun= surrounded by =()=            |
   | C-;        | [[http://oremacs.com/lispy/#lispy-describe-inline][lispy-describe-inline]]          |      | "Comment" on function or currently-marked symbol |
   | C-.        | [[http://oremacs.com/lispy/#lispy-kill-at-point][lispy-kill-at-point]]            |      |                                                  |
@@ -101,22 +104,28 @@ There are three special cases:
   |------------+--------------------------------+------+--------------------------------------------------|
 
 * Local bindings
+  :PROPERTIES:
+  :CUSTOM_ID: local-bindings
+  :END:
 ** a-z
+   :PROPERTIES:
+   :CUSTOM_ID: a-z
+   :END:
    | Binding | Command name       | Orig | Mnemonic                                |
    |---------+--------------------+------+-----------------------------------------|
-   | a       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-ace-a][Hydra: Lispy Ace]]   |      |                                         |
+   | a       | [[#lispy-ace-a][Hydra: Lispy Ace]]   |      |                                         |
    | b       | lispy-back         | yes  |                                         |
    | c       | [[http://oremacs.com/lispy/#lispy-clone][lispy-clone]]        | yes  |                                         |
    | d       | [[http://oremacs.com/lispy/#lispy-down][lispy-down]]         |      |                                         |
-   | e       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-eval-e][Hydra: Lispy Eval]]  |      |                                         |
+   | e       | [[#lispy-eval-e][Hydra: Lispy Eval]]  |      |                                         |
    | f       | [[http://oremacs.com/lispy/#lispy-flow][lispy-flow]]         | yes  |                                         |
-   | g       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-goto-g][Hydra: Lispy Goto]]  |      |                                         |
+   | g       | [[#lispy-goto-g][Hydra: Lispy Goto]]  |      |                                         |
    | h       | *available*        |      |                                         |
    | i       | [[http://oremacs.com/lispy/#lispy-tab][lispy-tab]]          | yes  | =C-i= is =TAB=                          |
    | j       | *available*        |      |                                         |
    | k       | *available*        |      |                                         |
    | l       | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]         |      |                                         |
-   | m       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-mark-s-m-m][Hydra: Lispy Mark]]  |      |                                         |
+   | m       | [[#lispy-mark-s-m-m][Hydra: Lispy Mark]]  |      |                                         |
    | n       | [[http://oremacs.com/lispy/#lispy-forward][lispy-forward]]      |      | Equivalent to =forward-list= (=C-M-n=)  |
    | o       | [[http://oremacs.com/lispy/#lispy-occur][lispy-occur]]        |      |                                         |
    | p       | [[http://oremacs.com/lispy/#lispy-backward][lispy-backward]]     |      | Equivalent to =backward-list= (=C-M-p=) |
@@ -127,17 +136,20 @@ There are three special cases:
    | u       | [[http://oremacs.com/lispy/#lispy-up][lispy-up]]           |      |                                         |
    | v       | [[http://oremacs.com/lispy/#lispy-view][lispy-view]]         | yes  |                                         |
    | w       | [[http://oremacs.com/lispy/#lispy-new-copy][lispy-new-copy]]     |      | =M-w= copies region                     |
-   | x       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-x-s-x-x][Hydra: Lispy X]]     |      |                                         |
+   | x       | [[#lispy-x-s-x-x][Hydra: Lispy X]]     |      |                                         |
    | y       | *available*        |      |                                         |
    | z       | lispy-repeat       |      | =C-x z= runs =repeat=                   |
    | ~       | lispy-tilde        | yes  |                                         |
    | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]       |      | Default binding: =M-*=                  |
    | /       | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]         |      | =C-/= runs =undo=                       |
    | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]         | yes  |                                         |
-   | >       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-slurp-][Hydra: Lispy Slurp]] |      |                                         |
+   | >       | [[#lispy-slurp-][Hydra: Lispy Slurp]] |      |                                         |
    |---------+--------------------+------+-----------------------------------------|
 
 ** A-Z
+   :PROPERTIES:
+   :CUSTOM_ID: a-z-1
+   :END:
    | Binding | Command name             | Orig | Mnemonic           |
    |---------+--------------------------+------+--------------------|
    | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  |                    |
@@ -145,19 +157,19 @@ There are three special cases:
    | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
    | D       | [[http://oremacs.com/lispy/#lispy-describe][lispy-describe]]           |      |                    |
    | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
-   | F       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-format-f][Hydra: Lispy Format]]      |      |                    |
+   | F       | [[#lispy-format-f][Hydra: Lispy Format]]      |      |                    |
    | G       | *available*              |      |                    |
    | H       | *available*              |      |                    |
    | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
    | J       | *available*              |      |                    |
    | K       | *available*              |      |                    |
    | L       | *available*              |      |                    |
-   | M       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-move-m][Hydra: Lispy Move]]        |      |                    |
+   | M       | [[#lispy-move-m][Hydra: Lispy Move]]        |      |                    |
    | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
-   | O       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-outline-o][Hydra: Lispy Outline]]     |      |                    |
+   | O       | [[#lispy-outline-o][Hydra: Lispy Outline]]     |      |                    |
    | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
    | Q       | *available*              |      |                    |
-   | R       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
+   | R       | [[#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
    | S       | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                    |
    | T       | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*        |
    | U       | lispy-unstringify        |      |                    |
@@ -170,9 +182,12 @@ There are three special cases:
    |---------+--------------------------+------+--------------------|
 
 * Hydras
+  :PROPERTIES:
+  :CUSTOM_ID: hydras
+  :END:
 ** Lispy Ace: =a=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-ace
+   :CUSTOM_ID: lispy-ace-a
    :END:
 
    | Binding | Command name             |
@@ -188,7 +203,7 @@ There are three special cases:
 
 ** Lispy Debug: =s-d=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-debug
+   :CUSTOM_ID: lispy-debug-s-d
    :END:
 
    | Binding | Command name        |
@@ -201,7 +216,7 @@ There are three special cases:
 
 ** Lispy Eval: =e=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-eval
+   :CUSTOM_ID: lispy-eval-e
    :END:
 
    | Binding | Command name            |
@@ -215,7 +230,7 @@ There are three special cases:
 
 ** Lispy Format: =F=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-format
+   :CUSTOM_ID: lispy-format-f
    :END:
 
    | Binding | Command name    |
@@ -226,7 +241,7 @@ There are three special cases:
 
 ** Lispy Goto: =g=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-goto
+   :CUSTOM_ID: lispy-goto-g
    :END:
 
    | Binding | Command name          |
@@ -245,7 +260,7 @@ There are three special cases:
 
 ** Lispy Mark: =s-m=, =m=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-mark
+   :CUSTOM_ID: lispy-mark-s-m-m
    :END:
 
    | Binding | Command name      |
@@ -260,7 +275,7 @@ There are three special cases:
 
 ** Lispy Move: =M=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-move
+   :CUSTOM_ID: lispy-move-m
    :END:
 
    | Binding | Command name     |
@@ -273,7 +288,7 @@ There are three special cases:
 
 ** Lispy Outline: =O=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-outline
+   :CUSTOM_ID: lispy-outline-o
    :END:
 
    | Binding | Command name             |
@@ -289,7 +304,7 @@ There are three special cases:
 
 ** Lispy Raise: =R=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-raise
+   :CUSTOM_ID: lispy-raise-r
    :END:
 
    | Binding | Command name     |
@@ -300,7 +315,7 @@ There are three special cases:
 
 ** Lispy Slurp: =>=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-slurp
+   :CUSTOM_ID: lispy-slurp-
    :END:
 
    | Binding | Command name     |
@@ -315,7 +330,7 @@ There are three special cases:
 
 ** Lispy X: =s-x=, =x=
    :PROPERTIES:
-   :CUSTOM_ID: lispy-x
+   :CUSTOM_ID: lispy-x-s-x-x
    :END:
 
    | Binding | Command name           |
@@ -331,6 +346,9 @@ There are three special cases:
    |---------+------------------------|
 
 * Unbound commands
+  :PROPERTIES:
+  :CUSTOM_ID: unbound-commands
+  :END:
   The following table lists commands that currently lack a mnemonic
   key binding. Not all of them are unbound: If Lispy provides global
   and/or local bindings for a given command, these are listed in the
