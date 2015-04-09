@@ -150,36 +150,36 @@ There are three special cases:
    :PROPERTIES:
    :CUSTOM_ID: a-z-1
    :END:
-   | Binding | Command name             | Orig | Mnemonic           |
-   |---------+--------------------------+------+--------------------|
-   | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  |                    |
-   | B       | *available*              |      |                    |
-   | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
-   | D       | [[http://oremacs.com/lispy/#lispy-describe][lispy-describe]]           |      |                    |
-   | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
-   | F       | [[#lispy-format-f][Hydra: Lispy Format]]      |      |                    |
-   | G       | *available*              |      |                    |
-   | H       | *available*              |      |                    |
-   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB= |
-   | J       | *available*              |      |                    |
-   | K       | *available*              |      |                    |
-   | L       | *available*              |      |                    |
-   | M       | [[#lispy-move-m][Hydra: Lispy Move]]        |      |                    |
-   | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                    |
-   | O       | [[#lispy-outline-o][Hydra: Lispy Outline]]     |      |                    |
-   | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                    |
-   | Q       | *available*              |      |                    |
-   | R       | [[#lispy-raise-r][Hydra: Lispy Raise]]       |      |                    |
-   | S       | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                    |
-   | T       | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*        |
-   | U       | lispy-unstringify        |      |                    |
-   | V       | [[http://oremacs.com/lispy/#lispy-visit][lispy-visit]]              | yes  |                    |
-   | W       | [[http://oremacs.com/lispy/#lispy-widen][lispy-widen]]              | yes  |                    |
-   | X       | *unbound*                |      |                    |
-   | Y       | *unbound*                |      |                    |
-   | Z       | *available*              |      |                    |
-   | SPC     | [[http://oremacs.com/lispy/#lispy-space][lispy-space]]              | yes  |                    |
-   |---------+--------------------------+------+--------------------|
+   | Binding | Command name             | Orig | Mnemonic                          |
+   |---------+--------------------------+------+-----------------------------------|
+   | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  | =C-M-a= runs =beginning-of-defun= |
+   | B       | *available*              |      |                                   |
+   | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                                   |
+   | D       | [[http://oremacs.com/lispy/#lispy-describe][lispy-describe]]           |      |                                   |
+   | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                                   |
+   | F       | [[#lispy-format-f][Hydra: Lispy Format]]      |      |                                   |
+   | G       | *available*              |      |                                   |
+   | H       | *available*              |      |                                   |
+   | I       | [[http://oremacs.com/lispy/#lispy-shifttab][lispy-shifttab]]           | yes  | =C-S-i= is =S-TAB=                |
+   | J       | *available*              |      |                                   |
+   | K       | *available*              |      |                                   |
+   | L       | *available*              |      |                                   |
+   | M       | [[#lispy-move-m][Hydra: Lispy Move]]        |      |                                   |
+   | N       | [[http://oremacs.com/lispy/#lispy-narrow][lispy-narrow]]             | yes  |                                   |
+   | O       | [[#lispy-outline-o][Hydra: Lispy Outline]]     |      |                                   |
+   | P       | [[http://oremacs.com/lispy/#lispy-paste][lispy-paste]]              | yes  |                                   |
+   | Q       | *available*              |      |                                   |
+   | R       | [[#lispy-raise-r][Hydra: Lispy Raise]]       |      |                                   |
+   | S       | [[http://oremacs.com/lispy/#lispy-stringify][lispy-stringify]]          | yes  |                                   |
+   | T       | [[http://oremacs.com/lispy/#lispy-ert][lispy-ert]]                | yes  | Run *tests*                       |
+   | U       | lispy-unstringify        |      |                                   |
+   | V       | [[http://oremacs.com/lispy/#lispy-visit][lispy-visit]]              | yes  |                                   |
+   | W       | [[http://oremacs.com/lispy/#lispy-widen][lispy-widen]]              | yes  |                                   |
+   | X       | *unbound*                |      |                                   |
+   | Y       | *unbound*                |      |                                   |
+   | Z       | *available*              |      |                                   |
+   | SPC     | [[http://oremacs.com/lispy/#lispy-space][lispy-space]]              | yes  |                                   |
+   |---------+--------------------------+------+-----------------------------------|
 
 * Hydras
   :PROPERTIES:
