@@ -1,10 +1,10 @@
 ## lispy-mnemonic.el [![License: GPL](https://img.shields.io/badge/license-GPL-blue.svg)](http://opensource.org/licenses/GPL-3.0)
 
-This package provides a set of
+This package provides a minor mode that sets up
 [mnemonic](https://en.wikipedia.org/wiki/Mnemonic) key bindings for
-[Lispy](https://github.com/abo-abo/lispy). It also makes extensive use
-of [hydras](https://github.com/abo-abo/hydra) for grouping related
-commands and improving discoverability.
+[Lispy](https://github.com/abo-abo/lispy). `lispy-mnemonic` also makes
+extensive use of [hydras](https://github.com/abo-abo/hydra) for
+grouping related commands and improving discoverability.
 
 ### Background
 
@@ -73,7 +73,16 @@ it, follow these steps:
         (add-to-list 'load-path "~/path/to/lispy-mnemonic/")
         (require 'lispy-mnemonic)
 
+4. **Optional**: To turn `lispy-mnemonic-mode` on automatically for,
+   e.g., buffers that are in `emacs-lisp-mode`, add the following code
+   to your init-file:
+
+        (add-hook 'emacs-lisp-mode-hook 'lispy-mnemonic-mode)
+
 ### Usage
+
+Do <kbd>M-x</kbd> `lispy-mnemonic-mode` <kbd>RET</kbd> to turn
+`lispy-mnemonic-mode` on or off.
 
 See [here](https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org) for a full list of bindings.
 
@@ -84,7 +93,7 @@ conflict with default bindings for built-in commands. If you would
 like to restore the original behavior of any bindings that Lispy
 overrides, add the following to your init-file:
 
-    (add-hook 'lispy-mode-hook 'lispy-mnemonic-restore-bindings)
+    (setq lispy-mnemonic-restore-bindings t)
 
 Here is a list of bindings that will be restored:
 
