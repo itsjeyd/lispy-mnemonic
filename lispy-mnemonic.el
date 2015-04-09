@@ -214,7 +214,7 @@
   ("r" lispy-goto-recursive "recursive")
   ("s" lispy-goto-symbol "symbol")
   ("." lispy-goto-symbol "symbol")
-  ("*" pop-tag-mark "pop tag mark"))
+  ("*" pop-tag-mark "pop tag mark" :color red))
 
 (defhydra hydra-lispy-mark ()
   "Lispy mark"
