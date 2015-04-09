@@ -39,7 +39,7 @@ There are three special cases:
     - [[#a-z-1][A-Z]]
   - [[#hydras][Hydras]]
     - [[#lispy-ace-a][Lispy Ace]]
-    - [[#lispy-debug-s-d-d][Lispy Debug]]
+    - [[#lispy-debug-s-d][Lispy Debug]]
     - [[#lispy-eval-e][Lispy Eval]]
     - [[#lispy-format-f][Lispy Format]]
     - [[#lispy-goto-g][Lispy Goto]]
@@ -65,7 +65,7 @@ There are three special cases:
   | ;          | [[http://oremacs.com/lispy/#lispy-comment][lispy-comment]]                  | yes  |                                                  |
   | #          | lispy-hash                     | yes  |                                                  |
   | ^          | lispy-hat                      | yes  |                                                  |
-  | s-d        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]             |      |                                                  |
+  | s-d        | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d][Hydra: Lispy Debug]]             |      |                                                  |
   | s-i        | lispy-iedit                    |      |                                                  |
   | s-j        | lispy-join                     |      |                                                  |
   | s-l        | [[http://oremacs.com/lispy/#lispy-left][lispy-left]]                     |      |                                                  |
@@ -143,7 +143,7 @@ There are three special cases:
    | A       | [[http://oremacs.com/lispy/#lispy-beginning-of-defun][lispy-beginning-of-defun]] | yes  |                    |
    | B       | *available*              |      |                    |
    | C       | [[http://oremacs.com/lispy/#lispy-convolute][lispy-convolute]]          | yes  |                    |
-   | D       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-debug-s-d-d][Hydra: Lispy Debug]]       |      |                    |
+   | D       | [[http://oremacs.com/lispy/#lispy-describe][lispy-describe]]           |      |                    |
    | E       | [[http://oremacs.com/lispy/#lispy-ediff-regions][lispy-ediff-regions]]      |      |                    |
    | F       | [[https://github.com/itsjeyd/lispy-mnemonic/blob/master/bindings.org#lispy-format-f][Hydra: Lispy Format]]      |      |                    |
    | G       | *available*              |      |                    |
@@ -186,7 +186,7 @@ There are three special cases:
    | t       | [[http://oremacs.com/lispy/#lispy-teleport][lispy-teleport]]           |
    |---------+--------------------------|
 
-** Lispy Debug: =s-d=, =D=
+** Lispy Debug: =s-d=
    :PROPERTIES:
    :CUSTOM_ID: lispy-debug
    :END:

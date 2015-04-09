@@ -320,11 +320,11 @@
 
 ;; A-Z
 
-(lispy-define-key lispy-mnemonic-mode-map (kbd "D") 'hydra-lispy-debug/body)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "F") 'hydra-lispy-format/body)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "M") 'hydra-lispy-move/body)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "O") 'hydra-lispy-outline/body)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "R") 'hydra-lispy-raise/body)
+(lispy-define-key lispy-mnemonic-mode-map (kbd "D") 'lispy-describe)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "E") 'lispy-ediff-regions)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "U") 'lispy-unstringify)
 
