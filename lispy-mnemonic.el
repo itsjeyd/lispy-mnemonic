@@ -157,12 +157,12 @@
 
 (defun lispy-mnemonic--restore-bindings ()
   "Restore default bindings for commands that ship with Emacs."
-  (define-key lispy-mnemonic-mode-map (kbd "C-2") nil)
-  (define-key lispy-mnemonic-mode-map (kbd "C-3") nil)
-  (define-key lispy-mnemonic-mode-map (kbd "C-4") nil)
-  (define-key lispy-mnemonic-mode-map (kbd "C-7") nil)
-  (define-key lispy-mnemonic-mode-map (kbd "C-8") nil)
-  (define-key lispy-mnemonic-mode-map (kbd "C-9") nil)
+  (define-key lispy-mnemonic-mode-map (kbd "C-2") 'digit-argument)
+  (define-key lispy-mnemonic-mode-map (kbd "C-3") 'digit-argument)
+  (define-key lispy-mnemonic-mode-map (kbd "C-4") 'digit-argument)
+  (define-key lispy-mnemonic-mode-map (kbd "C-7") 'digit-argument)
+  (define-key lispy-mnemonic-mode-map (kbd "C-8") 'digit-argument)
+  (define-key lispy-mnemonic-mode-map (kbd "C-9") 'digit-argument)
   (define-key lispy-mnemonic-mode-map (kbd "M-,") nil)
   (define-key lispy-mnemonic-mode-map (kbd "M-m") nil)
   (define-key lispy-mnemonic-mode-map (kbd "M-i") nil)
