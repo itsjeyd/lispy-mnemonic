@@ -27,9 +27,10 @@
 
 ;;; Commentary:
 ;;
-;; This package provides a set of mnemonic[1] key bindings for
-;; Lispy[2]. It also makes extensive use of hydras[3] for grouping
-;; related commands and improving discoverability.
+;; This package provides a minor mode that sets up mnemonic[1] key
+;; bindings for Lispy[2]. lispy-mnemonic also makes extensive use of
+;; hydras[3] for grouping related commands and improving
+;; discoverability.
 ;;
 ;; Background
 ;;
@@ -95,7 +96,16 @@
 ;;    (add-to-list 'load-path "~/path/to/lispy-mnemonic/")
 ;;    (require 'lispy-mnemonic)
 ;;
+;; 4. **Optional**: To turn `lispy-mnemonic-mode' on automatically
+;;    for, e.g., buffers that are in `emacs-lisp-mode', add the
+;;    following code to your init-file:
+;;
+;;         (add-hook 'emacs-lisp-mode-hook 'lispy-mnemonic-mode)
+;;
 ;; Usage
+;;
+;; Do M-x lispy-mnemonic-mode RET to turn `lispy-mnemonic-mode' on or
+;; off.
 ;;
 ;; See [6] for a full list of bindings.
 ;;
@@ -106,7 +116,7 @@
 ;; like to restore the original behavior of any bindings that Lispy
 ;; overrides, add the following to your init-file:
 ;;
-;;     (add-hook 'lispy-mode-hook 'lispy-mnemonic-restore-bindings)
+;;     (setq lispy-mnemonic-restore-bindings t)
 ;;
 ;; Here is a list of bindings that will be restored:
 ;;
