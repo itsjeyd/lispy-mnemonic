@@ -328,6 +328,7 @@
 (lispy-define-key lispy-mnemonic-mode-map (kbd "E") 'lispy-ediff-regions)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "U") 'lispy-unstringify)
 
+;;;###autoload
 (define-minor-mode lispy-mnemonic-mode
   "Mnemonic key bindings (and hydras) for Lispy."
   :init-value nil
