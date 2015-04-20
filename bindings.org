@@ -142,7 +142,7 @@ There are three special cases:
    | ~       | lispy-tilde        | yes  |                                         |
    | *       | [[http://oremacs.com/lispy/#pop-tag-mark][pop-tag-mark]]       |      | Default binding: =M-*=                  |
    | /       | [[http://oremacs.com/lispy/#lispy-undo][lispy-undo]]         |      | =C-/= runs =undo=                       |
-   | <       | [[http://oremacs.com/lispy/#lispy-barf][lispy-barf]]         | yes  |                                         |
+   | <       | [[#lispy-slurp-][Hydra: Lispy Slurp]] |      |                                         |
    | >       | [[#lispy-slurp-][Hydra: Lispy Slurp]] |      |                                         |
    |---------+--------------------+------+-----------------------------------------|
 

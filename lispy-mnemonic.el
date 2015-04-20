@@ -305,6 +305,7 @@
 (lispy-define-key lispy-mnemonic-mode-map (kbd "m") 'hydra-lispy-mark/body)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "x") 'hydra-lispy-x/body)
 (lispy-define-key lispy-mnemonic-mode-map (kbd ">") 'hydra-lispy-slurp/body)
+(lispy-define-key lispy-mnemonic-mode-map (kbd "<") 'hydra-lispy-slurp/body)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "d") 'lispy-down)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "l") 'lispy-left)
 (lispy-define-key lispy-mnemonic-mode-map (kbd "n") 'lispy-forward)
