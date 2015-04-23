@@ -250,11 +250,9 @@
 (defhydra hydra-lispy-slurp ()
   "Lispy slurp"
   (">" lispy-slurp "slurp")
-  ("s" lispy-slurp "slurp")
   ("d" lispy-down-slurp "down")
   ("u" lispy-up-slurp "up")
-  ("<" lispy-barf "barf")
-  ("b" lispy-barf "barf"))
+  ("<" lispy-barf "barf"))
 
 (defhydra hydra-lispy-x ()
   "Lispy x"
