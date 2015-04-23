@@ -313,7 +313,7 @@ There are three special cases:
    | s       | [[http://oremacs.com/lispy/#lispy-raise-some][lispy-raise-some]] |
    |---------+------------------|
 
-** Lispy Slurp: =>=
+** Lispy Slurp: =>=, =<=
    :PROPERTIES:
    :CUSTOM_ID: lispy-slurp-
    :END:
