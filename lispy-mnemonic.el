@@ -1,4 +1,4 @@
-;;; lispy-mnemonic.el --- Mnemonic key bindings for Lispy.
+;;; lispy-mnemonic.el --- Mnemonic key bindings for Lispy. -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2015 Tim Krones
 
@@ -149,11 +149,17 @@
 (require 'lispy)
 (require 'hydra)
 
+(defgroup lispy-mnemonic nil
+  "Mnemonic key bindings for Lispy."
+  :group 'bindings)
+
 (defcustom lispy-mnemonic-restore-bindings nil
   "When non-nil, restore default bindings for commands that ship
   with Emacs."
-  :type 'boolean
-  :group 'lispy-mnemonic)
+  :type 'boolean)
+
+(defvar lispy-mnemonic-mode-map (copy-keymap lispy-mode-map)
+  "Keymap for `lispy-mnemonic-mode'.")
 
 (defun lispy-mnemonic--restore-bindings ()
   "Restore default bindings for commands that ship with Emacs."
@@ -269,9 +275,6 @@
 ;;; Key Bindings ;;;
 ;;;;;;;;;;;;;;;;;;;;
 
-(defvar lispy-mnemonic-mode-map lispy-mode-map
-  "Keymap for `lispy-mnemonic-mode'.")
-
 ;; Global bindings (work in any context)
 
 (define-key lispy-mnemonic-mode-map (kbd "[") 'lispy-brackets)
@@ -333,7 +336,6 @@
   :init-value nil
   :lighter " 💡"
   :keymap lispy-mnemonic-mode-map
-  :group 'lispy-mnemonic
   :after-hook (when lispy-mnemonic-restore-bindings
                 (lispy-mnemonic--restore-bindings)))
 
