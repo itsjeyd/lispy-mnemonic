@@ -271,6 +271,8 @@ There are three special cases:
    | s       | [[http://oremacs.com/lispy/#lispy-mark-symbol][lispy-mark-symbol]] |
    | L       | lispy-mark-left   |
    | R       | lispy-mark-right  |
+   | >       | lispy-slurp       |
+   | <       | lispy-barf        |
    |---------+-------------------|
 
 ** Lispy Move: =M=

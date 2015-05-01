@@ -229,7 +229,9 @@
   ("l" lispy-mark-list "list")
   ("s" lispy-mark-symbol "symbol")
   ("L" lispy-mark-left "left")
-  ("R" lispy-mark-right "right"))
+  ("R" lispy-mark-right "right")
+  (">" lispy-slurp "slurp")
+  ("<" lispy-barf "barf"))
 
 (defhydra hydra-lispy-move ()
   "Lispy move"
