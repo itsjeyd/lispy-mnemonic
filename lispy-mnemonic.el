@@ -297,6 +297,7 @@
 (define-key lispy-mnemonic-mode-map (kbd "s-o") 'lispy-out-forward-newline)
 (define-key lispy-mnemonic-mode-map (kbd "s-r") 'lispy-right)
 (define-key lispy-mnemonic-mode-map (kbd "s-s") 'lispy-split)
+(define-key lispy-mnemonic-mode-map (kbd "s-u") 'lispy-splice)
 
 ;; Local bindings (work in "special" only)
 

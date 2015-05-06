@@ -76,6 +76,7 @@ There are three special cases:
   | s-o        | [[http://oremacs.com/lispy/#lispy-out-forward-newline][lispy-out-forward-newline]]      |      | Enhanced version of =open-line=                  |
   | s-r        | [[http://oremacs.com/lispy/#lispy-right][lispy-right]]                    |      |                                                  |
   | s-s        | lispy-split                    |      |                                                  |
+  | s-u        | lispy-splice                   |      | *Unwrap* sexp containing point                   |
   | s-x        | [[#lispy-x-s-x-x][Hydra: Lispy X]]                 |      |                                                  |
   | C-(, C-)   | [[http://oremacs.com/lispy/#lispy-arglist-inline][lispy-arglist-inline]]           |      | Arglist of =defun= surrounded by =()=            |
   | C-;        | [[http://oremacs.com/lispy/#lispy-describe-inline][lispy-describe-inline]]          |      | "Comment" on function or currently-marked symbol |
@@ -372,7 +373,6 @@ There are three special cases:
   | lispy-other-mode              |              |             |
   | lispy-other-space             |              |             |
   | lispy-quit                    |              |             |
-  | lispy-splice                  |              |             |
   | lispy-store-region-and-buffer | C-4 B        |             |
   | lispy-transform-mode          |              |             |
   | lispy-view-test               | C-4 v        |             |
